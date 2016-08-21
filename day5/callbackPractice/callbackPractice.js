@@ -58,16 +58,15 @@ last(names, function(lastName){
 
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
-
-
-
-
-var x = 10;
-
   //Code Here for multiply
-  function multiply(num1, num2, cb) {
-    cb(num1 * num2);
-  }
+  // function multiply(num1, num2, cb) {
+  //   cb(num1 * num2);
+  // }
+//
+function multiply(num1, num2, cb) {
+  var answer = num1 * num2;
+  cb(answer);
+}
 
 multiply(4, 3, function(answer){
   console.log('The answer is ' + answer); //should console.log 12
@@ -87,6 +86,17 @@ multiply(4, 3, function(answer){
 
 
 
+function contains(names, b, cb) {
+  var result;
+  if(names.indexOf(b) === -1) {
+    result = false;
+  } else {
+    result = true;
+  }
+  cb(result);
+  //cb = function(result) { ... }
+}
+
 contains(names, 'Colt', function(result){
   if(result === true){
     console.log('Colt is in the array');
@@ -105,10 +115,23 @@ contains(names, 'Colt', function(result){
 
 
     //Code Here for uniq
+function uniq(names, cb) {
+  var sorted = [];
 
-// uniq(names, function(uniqArr){
-//   console.log('The new names array with all the duplicate items removed is ', uniqArr);
-// });
+  for(var i = 0; i < names.length; i++) {
+    if(sorted.indexOf(names[i]) === -1) {
+      sorted.push(names[i]);
+    }
+
+  }
+  cb(sorted);
+}
+
+
+
+uniq(names, function(uniqArr){
+  console.log('The new names array with all the duplicate items removed is ', uniqArr);
+});
 
 
 
@@ -121,9 +144,16 @@ contains(names, 'Colt', function(result){
 
     //Code Here for each
 
-// each(names, function(item, indice){
-//   console.log('The item in the ' + indice + ' position is ' + item)
-// });
+    function each(names, cb){
+      // names.forEach(cb)
+      for(var i = 0; i < names.length; i++) {
+        cb(names[i], i);
+      }
+    }
+
+each(names, function(item, indice){
+  console.log('The item in the ' + indice + ' position is ' + item)
+});
 
 
 
