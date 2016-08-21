@@ -1,0 +1,40 @@
+.section-first{
+  width: 33.33%;
+  height: 100vh;
+  background: #66a3ff;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+.section-second{
+  width: 33.33%;
+  height: 100vh;
+  background: #33ffff;
+  display: inline-block;
+  float: left;
+}
+
+.section-third{
+  width: 33.33%;
+  height: 100vh;
+  background: #66ff66;
+  display: inline-block;
+  float: left;
+}
+
+.bottom-block {
+  width:33.33%;
+  height:200px;
+  background:red;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+#image {
+  text-align: center;
+  padding-top: 90px;
+  font-size: 33.33px;
+  color:white;
+}
