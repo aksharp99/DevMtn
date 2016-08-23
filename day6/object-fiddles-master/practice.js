@@ -305,10 +305,11 @@ function (){}
   //merge the two objects with a for in loop
   function bindCard(makePerson, makeCard) {
     var newObj = {}
-    for (var prop in makePerson) {
-      newObj.push(prop);
+    for (var key in makePerson) {
+      newObj[key] = makePerson[key];
     }
     for(var prop in makeCard) {
-      newObj.push(prop)
+      newObj[key] = makeCard[key]
     }
+    return newObj;
   }
