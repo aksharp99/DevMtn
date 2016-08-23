@@ -196,38 +196,58 @@ if (arguments.length === 0) {
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 
   //Code Here
-
+function maker() {
+  var arr = [];
+  for (var i = 1; i<=215; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
 
 
 //Next Problem
 
 
-// var numbers = [5, '9', 16, 19, '25', '34', 48];
+var numbers = [5, '9', 16, 19, '25', '34', 48];
 //Write a function called addTen that is given 'numbers' as it's only argument and returns a new
 //array after adding ten to each item in numbers. *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 
   //Code Here
+  function addTen(numbers) {
+  	for (var i = 0; i < numbers.length; i++) {
+  		numbers[i] = Number(numbers[i]) + 10;
+  	}
+  	return numbers;
+  }
 
+  addTen(numbers);
 
 
 //Next Problem
 
 
 
-// var num1 = Math.floor(Math.random() * (30 - 0) + 0);
-// var num2 = Math.floor(Math.random() * (30 - 0) + 0);
-// var arr1 = [];
-// var arr2 = [];
-// for(var i = 0; i < num1; i++){
-//   arr1.push(i);
-// }
-// for(var i = 0; i < num2; i++){
-//   arr2.push(i);
-// }
+var num1 = Math.floor(Math.random() * (30 - 0) + 0);
+var num2 = Math.floor(Math.random() * (30 - 0) + 0);
+var arr1 = [];
+var arr2 = [];
+for(var i = 0; i < num1; i++){
+  arr1.push(i);
+}
+for(var i = 0; i < num2; i++){
+  arr2.push(i);
+}
 //Above is some code that adds a random number of values to both arr1 and arr2.
 //Write a function called 'longer' that is given arr1 and arr2 as it's only arguments. Return the array which is longest.
 
   //Code Here
+  function longer(arr1, arr2) {
+	if (arr1 > arr2) {
+		return arr1;
+	} else {
+		return arr2;
+	}
+}
 
 
 /*As a continuation of the previous problem, write another function called 'both'.
@@ -238,6 +258,20 @@ if (arguments.length === 0) {
 
   //Code Here
 
+  function both(arr1, arr2) {
+	var newArr = [];
+	for (var i = 0; i < arr1.length;i++) {
+		for(var j = 0; j < arr2.length; j++){
+      if(arr1[i] === arr2[j]) {
+				newArr.push(arr1[i]);
+			}
+		}
+	}
+	return newArr;
+}
+
+
+
 
 
 
@@ -245,44 +279,51 @@ if (arguments.length === 0) {
 
 
 
-//
-// var devMountainEmployees = [];
-//
-// var tyler = {
-//     name: 'Tyler',
-//     position: 'Lead Instructor/Engineer',
-//     spiritAnimal: 'Honey Badger'
-// };
-//
-// var cahlan = {
-//     name: 'Cahlan',
-//     position: 'CEO',
-//     spiritAnimal: 'butterfly'
-// };
-//
-// var ryan = {
-//     name: 'Ryan',
-//     position: 'Marketing',
-//     spiritAnimal: 'fox'
-// };
-//
-// var colt = {
-//     name: 'Colt',
-//     position: 'Everything really',
-//     spiritAnimal: 'Young Male Horse'
-// };
+
+var devMountainEmployees = [];
+
+var tyler = {
+    name: 'Tyler',
+    position: 'Lead Instructor/Engineer',
+    spiritAnimal: 'Honey Badger'
+};
+
+var cahlan = {
+    name: 'Cahlan',
+    position: 'CEO',
+    spiritAnimal: 'butterfly'
+};
+
+var ryan = {
+    name: 'Ryan',
+    position: 'Marketing',
+    spiritAnimal: 'fox'
+};
+
+var colt = {
+    name: 'Colt',
+    position: 'Everything really',
+    spiritAnimal: 'Young Male Horse'
+};
 
 /*Above you're given an empty array with four objects. Fill the devMountainEmployees
 array with those four objects. After that console.log the length of the Array and make
 sure that it's equal to 4. */
 
   //Code Here
-
+  devMountainEmployees.push(tyler, cahlan, ryan, colt);
+  console.log(devMountainEmployees.length);
 /*Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
 
   //Code Here
+  for (var i = 1; i < devMountainEmployees.length; i++) {
+  	if(("name" in cahlan) === true) {
 
+  		devMountainEmployees.splice(i,i);
+  		break;
+  	}
+  }
 
 
 
@@ -297,25 +338,25 @@ Let's think back to our itunes example (tylermcginnis.com/itunes).
 Notice that when you type in an artist name, iTunes gives us back a LOT of data.
 What they're really giving us is an Array full of Objects. It probably looks something
 like this. */
-//
-// var data = [
-//     {
-//         artist: 'shakira',
-//         album: 'hips don\'t lie',
-//         tracks: 16
-//     },
-//     {
-//         artist: 'shakira',
-//         album: 'mariposa',
-//         tracks: 12
-//     },
-//     {
-//         artist: 'shakira',
-//         album: 'greatest hits',
-//         tracks: 19
-//     }
-// ];
-//
+
+var data = [
+    {
+        artist: 'shakira',
+        album: 'hips don\'t lie',
+        tracks: 16
+    },
+    {
+        artist: 'shakira',
+        album: 'mariposa',
+        tracks: 12
+    },
+    {
+        artist: 'shakira',
+        album: 'greatest hits',
+        tracks: 19
+    }
+];
+
 
 
 /*A very clean way to pass around large LISTS (arrays) of COLLECTIONS (objects)
@@ -324,20 +365,32 @@ of Data is to have an Array full of objects. */
 //Create an empty array called users.
 
   //Code Here
-
+var users = [];
 /*Now add three user objects to your users array. Each user object should contain the
 following properties. name, email, password, username.*/
 
 //include this as one of the objects in your array.
-// var user1 = {
-//     name: 'Tyler McGinnis',
-//     email: 'tylermcginnis33@gmail.com',
-//     password: 'iLoveJavaScript',
-//     username: 'infiniateLoop'
-// };
+var user1 = {
+    name: 'Tyler McGinnis',
+    email: 'tylermcginnis33@gmail.com',
+    password: 'iLoveJavaScript',
+    username: 'infiniateLoop'
+};
 
 //Your Code Here
+var user2 = {
+  name: 'Bill Gates',
+  email: 'billgates@gmail.com',
+  password: 'iHateJavascript',
+  username: 'bgbgbg'
+};
 
+var user3 = {
+  name: 'Elon Musk',
+  email: 'elonmusk@gmail.com',
+  password: 'iloveTesla',
+  username: 'EMEMEM'
+};
 /*Now you have a very common data structure. Twitter is a good use case.
 It's easy to imagine that your followers list on Twitter is an Array full or objects
 and those objects contain properties about the specific person you follow.*/
@@ -347,5 +400,16 @@ objects until you find Tyler's account (use tylermcginnis33@gmail.com to find hi
 Once you find the particular index he's located in, delete him from the array.*/
 
   //Code Here
+users[0] = user1;
+users[1] = user2;
+users[2] = user3;
 
+  for (var i = 1; i < users.length; i++) {
+    if(("email" in user1) === true) {
+
+      devMountainEmployees.splice(i,i);
+      break;
+    }
+  }
+console.log(users);
 //The activity we just did is very much how data works in 'the real world'.
