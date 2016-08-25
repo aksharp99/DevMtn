@@ -16,6 +16,34 @@ var _ = { };
   // Return an array of the first n elements of an array. If n is undefined,
   // return just the first element.
   _.first = function(array, n) {
+    // var emptyArr = [];
+    //   if (!(n)) {
+    //   return array[0];
+    //
+    //   }
+    //   else if (n > array.length) {
+    //   	return array;
+    //   }
+    //     else  {
+    //     	for (var i = 0; i < n.length; i++) {
+    //   	 emptyArr.push(array[i]);
+    //   }
+    //
+    //    }
+    //    return emptyArr;
+    var arr = [];
+    if( !(n) ) {
+      return array[0];
+    } else {
+      for(var i = 0; i < n; i++) {
+        if(n > array.length) {
+          return array;
+        } else {
+          arr.push(array[i]);
+        }
+      }
+      return arr;
+    }
   };
 
   // Like first, but for the last elements. If n is undefined, return just the
