@@ -75,3 +75,12 @@
     background: #000;
     margin-right:10px;;
 }
+.slide-cover {
+
+  transform: : translateY(-84%);
+}
+
+.slide-menu {
+  transform: : translateY(0) !important;
+  opacity: 1 !important;
+}
