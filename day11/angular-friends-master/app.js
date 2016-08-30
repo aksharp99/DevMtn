@@ -1,1 +1,1 @@
-angular.module('friendsList', []);
+angular.module('app', []);
