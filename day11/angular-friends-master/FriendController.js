@@ -435,16 +435,25 @@ $scope.friends = [
     "$$hashKey": "02U"
   }
 ]
-$scope.nullToUndefined = function(friends) {
- console.log(friends);
-  for (var i in friends) {
-    if($scope.friends[i].current_location === null) {
-      $scope.friends[i].current_location === undefined;
+
+
+  for (var i=0; i<$scope.friends.length;i++) {
+    if($scope.friends[i]["current_location"] === null) {
+      $scope.friends[i]["current_location"] = {
+        "city": "",
+        "state": "",
+        "county": "",
+        "zip": "",
+        "latitude": "",
+        "longitude": "",
+        "id": "",
+        "name": ""
+
+      };
     }
   }
-  return $scope.friends;
-  console.log(friends);
-}
+
+
 
 
 });
