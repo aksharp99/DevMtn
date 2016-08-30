@@ -2,6 +2,7 @@ angular.module('app').controller('FriendController',function($scope){
 $scope.test = "Hello World";
 $scope.sortProp;
 $scope.sortDirection;
+
 $scope.friends = [
   {
     "name": "Preston McNeil",
@@ -434,5 +435,16 @@ $scope.friends = [
     "$$hashKey": "02U"
   }
 ]
+$scope.nullToUndefined = function(friends) {
+ console.log(friends);
+  for (var i in friends) {
+    if($scope.friends[i].current_location === null) {
+      $scope.friends[i].current_location === undefined;
+    }
+  }
+  return $scope.friends;
+  console.log(friends);
+}
+
 
 });
