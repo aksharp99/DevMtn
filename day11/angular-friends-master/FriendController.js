@@ -1,7 +1,7 @@
 angular.module('app').controller('FriendController',function($scope){
 $scope.test = "Hello World";
-$scope.sortProp;
-$scope.sortDirection;
+$scope.sortProp = "name";
+$scope.sortDirection = "+";
 
 $scope.friends = [
   {
@@ -442,14 +442,14 @@ $scope.friends = [
       $scope.friends[i]["current_location"] = {
         "city": "",
         "state": "",
-        "county": "",
+        "country": "",
         "zip": "",
         "latitude": "",
         "longitude": "",
         "id": "",
         "name": ""
-
       };
+
     }
   }
 
