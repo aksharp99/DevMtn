@@ -17,10 +17,21 @@ $scope.getMessages = function() {
   //pass that text to the postMessage method on the messageService object which will then post it to the backend.
   $scope.postMessage = function(message) {
     messageService.postMessages(message);
+}
 
+$scope.postCookie = function(cookie) {
+  messageService.postCookie(cookie);
+}
 
+$scope.getCookies = function() {
+  var promise = messageService.getCookies();
 
-  }
+  promise.then(function(response){
+    $scope.cookies = response.data;
+
+  })
+}
+$scope.getCookies();
 
   //uncomment this code when your getMessages function is finished
   //This goes and gets new data every second, which mimicking a chat room experience.

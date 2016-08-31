@@ -33,4 +33,20 @@ angular.module('chatroom').service('messageService', function($http){
 
     });
   }
+
+
+this.postCookie = function(cookie) {
+  return $http({
+    method:'POST',
+    url: 'http://practiceapi.devmounta.in/api/cookies',
+    data:{cookie: cookie}
+  });
+}
+
+this.getCookies = function() {
+  return $http({
+    method: 'GET',
+    url: 'http://practiceapi.devmounta.in/api/cookies'
+  });
+}
 });
