@@ -93,12 +93,13 @@ if (arguments.length === 0) {
 
 // #10 Write a function called removeItem that takes in an array of strings, and a string.
 function removeItem(array, rm) {
-	for(var i = 0; i < array.length; i++) {
+	for(var i = array.length-1; i >=0 ; i--) {
 		if(array[i] === rm) {
 			array.splice(i,1);
 		}
-		return array;
+
 	}
+	return array;
 }
 
 
@@ -109,12 +110,18 @@ function removeItem(array, rm) {
 
 // #11 Write a function  called doubleTheFun that takes 1 parameter. It should double numbers, and
 // repeats strings. example 4->8, 2.5->5, 'Awesome'->'AwesomeAwesome'
-function doubleTheFun(numbers) {
-	if (typeof numbers === 'number') {
-		return numbers * 2;
-	} else if (typeof numbers === 'string') {
-		return numbers + numbers;
+function doubleTheFun(param) {
+	if (typeof (param) === 'string') {
+		if(isNaN(Number(param))) {
+			return (param + param);
+		}
+		else {
+			return Number(param) + Number(param);
 	}
+}
+else {
+	return param + param;
+}
 }
 
 
@@ -132,11 +139,7 @@ function makeChatMessage(message, author) {
 	return {
 		message: message,
 		author: author,
-		timestamp: function() {
-			var currTime = new Date();
-			var timestamp = currTime.getTime();
-			return timestamp;
-		}
+		timestamp: new Date()
 	}
 }
 
@@ -179,6 +182,7 @@ function outside(temperature, humidity, cloudiness) {
 // #16 Create a function called callerBack that takes in a function (holla) and a string parameter(back) and invokes it(holla) with the argument string(back) + ' back'."
 // example - If I call you with 'Give it' you should invoke holla with 'Give it back'
 
-function callerBack(cb, back) {
-	return cb(back) + ' back';
+function callerBack(holla, back) {
+	back = back + ' back';
+	holla(back);
 }
