@@ -64,7 +64,7 @@ $scope.myFinalArray = function(response) {
   var sortedArray = [];
   for (var i = 0; i < response.length; i++) {
     var empty = {
-    AlbumArt: response[i].artworkUrl30,
+    AlbumArt: response[i].artworkUrl100,
     Artist: response[i].artistName,
     Collection: response[i].collectionCensoredName,
     CollectionPrice: response[i].collectionPrice,
