@@ -41,7 +41,11 @@ myOtherShirt['type'] = 'spandex';
 // #5 Create an object that tracks a count of animals in a zoo.  Call it 'zoo'
 // The key should be the animal name(string) and the value should be how many there are.
 // Our zoo has 8 monkeys, 4 giraffes and 2 elephants
-var zoo = {}
+var zoo = {
+	monkeys: 8,
+	giraffes: 4,
+	elephants: 2
+}
 
 // #6 Loop through this object and change all keys that start with the letter s to have a value of 's'
 
