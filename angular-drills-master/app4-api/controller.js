@@ -1,4 +1,4 @@
-aangular.module('apiApp').controller("mainCtrl", function($scope, starshipService){
+angular.module('apiApp').controller("mainCtrl", function($scope, starshipService){
     $scope.test = "Hey good lookin"
 
     $scope.retrieveStarships = function(){
