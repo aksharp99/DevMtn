@@ -9,6 +9,9 @@ if ($stateParams.id == mainSrv.travelInfo[i].id) {
     backgroundImage: 'url(' + mainSrv.travelInfo[i].image + ')',
     backgroundSize: 'cover',
     backgroundPosition: 'center'
+
+
+
   }
 }
 
