@@ -7,10 +7,15 @@ function getColor() {
   return colors[index];
 }
   return {
-    restrict: 'E',
-    scope: {},
+    restrict: 'AE',
+    scope: {
+      title: '@',
+      callback: '&'
+    },
     link: function(scope, element, attributes) {
       element.on('click', function(event) {
+
+        scope.callback();
         var newColor = getColor();
 
         var targetElement = element.find('section');
@@ -20,6 +25,8 @@ function getColor() {
     templateUrl: 'dmHeader.html',
     controller: function($scope) {
       $scope.test = "CLICKED!";
+      console.log($scope.title);
+
     }
   }
 })
