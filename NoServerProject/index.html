@@ -1,13 +1,75 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html ng-app="marioApp">
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="./styles/views/main.css">
+
   </head>
-  <body>
+  <body ng-controller="mainCtrl">
+  <a ui-sref="score"><button>SCOREBOARD!</button></a>
+  <a ui-sref="teleport"><button>TELEPORT!</button></a>
+  <section class="sectionone">
+    <div class="blockone"></div>
+    <div class="blocktwo"></div>
+    <div class="blockthree"></div>
+    <div class="blockfour"></div>
 
+  </section>
+  <section class="sectiontwo">
+    <div class="blockfive"></div>
+    <div class="blocksix"></div>
+    <div class="blockseven"></div>
+    <div class="blockeight"></div>
 
+  </section>
+
+  <section class="sectionthree">
+    <div class="blocknine"></div>
+    <div class="blockten"></div>
+    <div class="blockeleven"></div>
+    <div class="blocktwelve"></div>
+
+  </section>
+
+  <section class="sectionfour">
+    <div class="blockthirteen"></div>
+    <div class="blockfourteen"></div>
+    <div class="blockfifteen"></div>
+    <div class="blocksixteen"></div>
+  </section>
+
+  <section class="sectionfive">
+    <div class="blockseventeen"></div>
+    <div class="blockeighteen"></div>
+    <div class="blocknineteen"></div>
+    <div class="blocktwenty"></div>
+  </section>
+
+  <section class="sectionsix">
+    <div class="blocktwentyone"></div>
+    <div class="blocktwentytwo"></div>
+    <div class="blocktwentythree"></div>
+    <div class="blocktwentyfour"></div>
+  </section>
+
+  <section class="sectionseven">
+    <div class="blocktwentyfive"></div>
+    <div class="blocktwentysix"></div>
+    <div class="blocktwentyseven"></div>
+    <div class="blocktwentyeight"></div>
+  </section>
+    <ui-view></ui-view>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src="./app.js"></script>
+    <script src="./js/controllers/mainCtrl.js"></script>
+    <script src="./js/services/mainService.js"></script>
+    <script src="./home/homeController.js"></script>
+    <script src="./score/scoreController.js"></script>
+    <script src="./teleport/teleportController.js"></script>
+    <script src="./js/script.js"></script>
+
   </body>
 </html>

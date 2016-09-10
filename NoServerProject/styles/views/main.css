@@ -1,0 +1,291 @@
+.sectionone {
+height: 645px;
+width: 100px;
+position: fixed;
+}
+
+.sectiontwo {
+height: 645px;
+width: 100px;
+margin-left: 200px;
+position: fixed;
+}
+
+.sectionthree {
+  height: 645px;
+  width: 100px;
+  margin-left: 400px;
+  position: fixed;
+}
+
+.sectionfour {
+  height: 645px;
+  width: 100px;
+  margin-left: 600px;
+  position:fixed;
+}
+
+.sectionfive {
+  height: 645px;
+  width: 100px;
+  margin-left: 800px;
+  position: fixed;
+}
+
+.sectionsix {
+  height:645px;
+  width: 100px;
+  margin-left: 1000px;
+  position:fixed;
+}
+
+.sectionseven {
+  height:645px;
+  width: 100px;
+  margin-left: 1162px;
+  position:fixed;
+}
+@-webkit-keyframes shutup {
+  0% {top: 0px;}
+  25% {top: 200px;}
+  75% {top: 50px;}
+  100% {top: 100px;}
+}
+
+.blockone {
+  height: 100px;
+  width: 100px;
+
+
+  -webkit-animation: shutup 5s;
+  animation: shutup 5s;
+  display: inline-block;
+  background: green;
+}
+
+.blocktwo {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+
+
+  -webkit-animation: shutup 5s;
+  animation: shutup 5s;
+  display: inline-block;
+  background: yellow;
+}
+
+.blockthree {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+}
+
+.blockfour {
+
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: blue;
+}
+
+.blockfive {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: blue;
+}
+
+.blocksix {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+}
+
+.blockseven {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: green;
+}
+
+.blockeight {
+
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+}
+
+.blocknine {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: black;
+}
+
+.blockten {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: blue;
+}
+
+.blockeleven {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+}
+
+.blocktwelve {
+
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+}
+
+.blockthirteen {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+}
+
+.blockfourteen {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  /*background: green;*/
+
+  background-image: url('http://mario.nintendo.com/img/mario_logo.png');
+
+
+}
+
+.blockfifteen {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+}
+
+.blocksixteen {
+
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: black;
+}
+
+
+.blockseventeen {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+}
+
+.blockeighteen {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+}
+
+.blocknineteen {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: black;
+}
+
+.blocktwenty {
+
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: green;
+}
+
+.blocktwentyone {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: green;
+}
+
+.blocktwentytwo {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+}
+
+.blocktwentythree{
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+}
+
+.blocktwentyfour {
+
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: blue;
+}
+
+
+.blocktwentyfive {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: blue;
+}
+
+.blocktwentysix {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: black;
+}
+
+.blocktwentyseven{
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+}
+
+.blocktwentyeight {
+
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+}
