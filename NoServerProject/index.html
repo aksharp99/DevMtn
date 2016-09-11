@@ -6,9 +6,19 @@
     <link rel="stylesheet" href="./styles/views/main.css">
 
   </head>
+  <dm-header></dm-header>
   <body ng-controller="mainCtrl">
+
+    <audio controls>
+
+    <source src="./music/mariomusic.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+   </audio>
+
+
   <a ui-sref="score"><button>SCOREBOARD!</button></a>
   <a ui-sref="teleport"><button>TELEPORT!</button></a>
+
   <section class="sectionone">
     <div class="blockone"></div>
     <div class="blocktwo"></div>
@@ -34,7 +44,9 @@
 
   <section class="sectionfour">
     <div class="blockthirteen"></div>
-    <div class="blockfourteen"></div>
+    <div class="blockfourteen">
+    <img src="http://mario.nintendo.com/img/mario_logo.png"/>
+    </div>
     <div class="blockfifteen"></div>
     <div class="blocksixteen"></div>
   </section>
