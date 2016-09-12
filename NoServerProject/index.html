@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="./jquery-ui-1.12.0.custom/jquery-ui.css">
 
   </head>
-  <dm-header></dm-header>
+
   <body ng-controller="mainCtrl">
+
 
     <audio controls>
 
@@ -19,59 +20,61 @@
 
   <a ui-sref="score"><button>SCOREBOARD!</button></a>
   <a ui-sref="teleport"><button>TELEPORT!</button></a>
-
+<!-- <dm-header></dm-header> -->
 
   <section class="sectionone">
-    <div class="blockone"></div>
-    <div class="blocktwo"></div>
-    <div class="blockthree"></div>
-    <div class="blockfour"></div>
+    <div dm-header class="blockone">
+      <img src=""/>
+    </div>
+    <div dm-header class="blocktwo"></div>
+    <div dm-header class="blockthree"></div>
+    <div dm-header class="blockfour"></div>
 
   </section>
   <section class="sectiontwo">
-    <div class="blockfive"></div>
-    <div class="blocksix"></div>
-    <div class="blockseven"></div>
-    <div class="blockeight"></div>
+    <div dm-header class="blockfive"></div>
+    <div dm-header class="blocksix"></div>
+    <div dm-header class="blockseven"></div>
+    <div dm-header class="blockeight"></div>
 
   </section>
 
   <section class="sectionthree">
-    <div class="blocknine"></div>
-    <div class="blockten"></div>
-    <div class="blockeleven"></div>
-    <div class="blocktwelve"></div>
+    <div dm-header class="blocknine"></div>
+    <div dm-header class="blockten"></div>
+    <div dm-header class="blockeleven"></div>
+    <div dm-header class="blocktwelve"></div>
 
   </section>
 
   <section class="sectionfour">
-    <div class="blockthirteen"></div>
-    <div class="blockfourteen">
+    <div dm-header class="blockthirteen"></div>
+    <div dm-header class="blockfourteen">
     <img id="mario" src="http://mario.nintendo.com/img/mario_logo.png"/>
     </div>
-    <div class="blockfifteen"></div>
-    <div class="blocksixteen"></div>
+    <div dm-header class="blockfifteen"></div>
+    <div dm-header class="blocksixteen"></div>
   </section>
 
   <section class="sectionfive">
-    <div class="blockseventeen"></div>
-    <div class="blockeighteen"></div>
-    <div class="blocknineteen"></div>
-    <div class="blocktwenty"></div>
+    <div dm-header class="blockseventeen"></div>
+    <div dm-header class="blockeighteen"></div>
+    <div dm-header class="blocknineteen"></div>
+    <div dm-header class="blocktwenty"></div>
   </section>
 
   <section class="sectionsix">
-    <div class="blocktwentyone"></div>
-    <div class="blocktwentytwo"></div>
-    <div class="blocktwentythree"></div>
-    <div class="blocktwentyfour"></div>
+    <div dm-header class="blocktwentyone"></div>
+    <div dm-header class="blocktwentytwo"></div>
+    <div dm-header class="blocktwentythree"></div>
+    <div dm-header class="blocktwentyfour"></div>
   </section>
 
   <section class="sectionseven">
-    <div class="blocktwentyfive"></div>
-    <div class="blocktwentysix"></div>
-    <div class="blocktwentyseven"></div>
-    <div class="blocktwentyeight"></div>
+    <div dm-header class="blocktwentyfive"></div>
+    <div dm-header class="blocktwentysix"></div>
+    <div dm-header class="blocktwentyseven"></div>
+    <div dm-header class="blocktwentyeight"></div>
   </section>
     <ui-view></ui-view>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -86,6 +89,8 @@
     <script src="./score/scoreController.js"></script>
     <script src="./teleport/teleportController.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/directives/directive.js"></script>
+
 
   </body>
 </html>

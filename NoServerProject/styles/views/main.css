@@ -7,7 +7,7 @@ body {
   background-image: url('http://orig08.deviantart.net/c0a4/f/2009/325/9/e/super_mario_bros__background_by_hyp64.png');
 }
 
-img {
+#mario {
 position: relative;
 left: 0;
 top: 0;
@@ -90,6 +90,7 @@ opacity: 0.6;
   display: inline-block;
   background: yellow;
   border-radius: 25px;
+
 }
 
 .blockthree {
@@ -203,6 +204,7 @@ opacity: 0.6;
   position: relative;
   left: 0;
   top: 0;
+  z-index:5;
 
 }
 
@@ -214,6 +216,7 @@ opacity: 0.6;
   background: red;
   border-radius: 25px;
   opacity: 0.6;
+  z-index: -1!important;
 
 
 }

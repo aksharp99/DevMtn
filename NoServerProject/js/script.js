@@ -21,7 +21,7 @@ $(document).ready(function() {
       break;
     }
   });
-
+  //
   $('div').on('click', function() {
     $(this).effect('explode');
   })
@@ -43,7 +43,10 @@ $(document).ready(function() {
 
   })
 
+
+
 // var select_element = document.getElementById('img');
+
 
 
 
