@@ -1,3 +1,348 @@
+audio {
+  opacity: 0.02
+}
+
 body {
   background-image: url('http://www.supermariobrosx.org/screen14.jpg');
+}
+
+#questionblock {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  border-radius: 25px;
+}
+#mario {
+  position:relative;
+  left:0;
+  top:0;
+}
+.sectionone {
+height: 645px;
+width: 100px;
+position: fixed;
+opacity: 0.6;
+}
+
+.sectiontwo {
+height: 645px;
+width: 100px;
+margin-left: 200px;
+position: fixed;
+opacity: 0.6;
+}
+
+.sectionthree {
+  height: 645px;
+  width: 100px;
+  margin-left: 400px;
+  position: fixed;
+  opacity: 0.6;
+}
+
+.sectionfour {
+  height: 645px;
+  width: 100px;
+  margin-left: 600px;
+  position:fixed;
+
+
+
+}
+
+.sectionfive {
+  height: 645px;
+  width: 100px;
+  margin-left: 800px;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.sectionsix {
+  height:645px;
+  width: 100px;
+  margin-left: 1000px;
+  position:fixed;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.sectionseven {
+  height:645px;
+  width: 100px;
+  margin-left: 1162px;
+  position:fixed;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+
+.blockone {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: green;
+  border-radius: 25px;
+
+}
+
+.blocktwo {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+  border-radius: 25px;
+
+}
+
+.blockthree {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+  border-radius: 25px;
+}
+
+.blockfour {
+
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: blue;
+  border-radius: 25px;
+}
+
+.blockfive {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: blue;
+  border-radius: 25px;
+}
+
+.blocksix {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+  border-radius: 25px;
+}
+
+.blockseven {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: green;
+  border-radius: 25px;
+}
+
+.blockeight {
+
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+  border-radius: 25px;
+}
+
+.blocknine {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: black;
+  border-radius: 25px;
+}
+
+.blockten {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: blue;
+  border-radius: 25px;
+}
+
+.blockeleven {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+  border-radius: 25px;
+}
+
+.blocktwelve {
+
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+  border-radius: 25px;
+}
+
+.blockthirteen {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+  border-radius: 25px;
+  opacity: 0.6;
+}
+
+.blockfourteen {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  /*background: green;*/
+  border-radius: 25px;
+  /*background-image: url('http://mario.nintendo.com/img/mario_logo.png');*/
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index:5;
+
+}
+
+.blockfifteen {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+  border-radius: 25px;
+  opacity: 0.6;
+  z-index: -1!important;
+
+
+}
+
+.blocksixteen {
+
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: black;
+  border-radius: 25px;
+  opacity: 0.6;
+
+}
+
+
+.blockseventeen {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+  border-radius: 25px;
+}
+
+.blockeighteen {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+  border-radius: 25px;
+}
+
+.blocknineteen {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: black;
+  border-radius: 25px;
+}
+
+.blocktwenty {
+
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: green;
+  border-radius: 25px;
+}
+
+.blocktwentyone {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: green;
+  border-radius: 25px;
+}
+
+.blocktwentytwo {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+  border-radius: 25px;
+}
+
+.blocktwentythree{
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+  border-radius: 25px;
+}
+
+.blocktwentyfour {
+
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: blue;
+  border-radius: 25px;
+}
+
+
+.blocktwentyfive {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: blue;
+  border-radius: 25px;
+}
+
+.blocktwentysix {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: black;
+  border-radius: 25px;
+}
+
+.blocktwentyseven{
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+  border-radius: 25px;
+}
+
+.blocktwentyeight {
+
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+  border-radius: 25px;
 }
