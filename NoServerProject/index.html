@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="./styles/views/main.css">
+    <link rel="stylesheet" href="./jquery-ui-1.12.0.custom/jquery-ui.css">
 
   </head>
   <dm-header></dm-header>
@@ -18,6 +19,7 @@
 
   <a ui-sref="score"><button>SCOREBOARD!</button></a>
   <a ui-sref="teleport"><button>TELEPORT!</button></a>
+
 
   <section class="sectionone">
     <div class="blockone"></div>
@@ -45,7 +47,7 @@
   <section class="sectionfour">
     <div class="blockthirteen"></div>
     <div class="blockfourteen">
-    <img src="http://mario.nintendo.com/img/mario_logo.png"/>
+    <img id="mario" src="http://mario.nintendo.com/img/mario_logo.png"/>
     </div>
     <div class="blockfifteen"></div>
     <div class="blocksixteen"></div>
@@ -73,6 +75,8 @@
   </section>
     <ui-view></ui-view>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./jquery-ui-1.12.0.custom/external/jquery/jquery.js"></script>
+    <script src="./jquery-ui-1.12.0.custom/jquery-ui.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
     <script src="./app.js"></script>

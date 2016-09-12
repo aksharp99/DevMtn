@@ -23,8 +23,11 @@ $(document).ready(function() {
   });
 
   $('div').on('click', function() {
-    $(this).fadeOut('slow');
+    $(this).effect('explode');
   })
+  // $('div').on('click', function() {
+  //   $(this).fadeOut('slow');
+  // })
   $('div').mouseenter(function() {
     $(this).animate({height: "+=20px", width: "+=20px"},'fast')
   });
@@ -32,13 +35,16 @@ $(document).ready(function() {
   $('div').mouseleave(function() {
     $(this).animate({height: "-=20px", width: "-=20px"}, 'fast')
   });
-
+  //
   $('button').on('click', function() {
 
-      $('img').fadeOut(5000);
-      $('img').fadeIn('slow');
+      $('img').fadeOut(80);
+      $('img').fadeIn(650);
 
   })
+
+// var select_element = document.getElementById('img');
+
 
 
 
