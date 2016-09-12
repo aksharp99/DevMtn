@@ -1,4 +1,5 @@
-angular.module('marioApp').directive('dmHeader', function() {
+angular.module('marioApp').directive('dmHeader', function($state) {
+  var newColor = getColor();
   var score = 0;
   function getColor() {
     var colors = ['green', 'yellow', 'red', 'blue'];
@@ -27,25 +28,38 @@ angular.module('marioApp').directive('dmHeader', function() {
 
         element.css('background-color', newColor);
         scope.keepScore(newColor);
+        scope.getScore();
       })
     },
 
     controller: function($scope) {
+
       $scope.test = "CLICKED!";
       console.log($scope.title);
 
       $scope.keepScore = function(newColor) {
-        // if(newColor === 'yellow'){
+
+
         if(newColor) {
           score += 10;
         } else {
           score -= 10;
         }
         console.log('Your score is now', score);
-      }
-
-
-    }
-
+        return score;
   }
-})
+
+  $scope.getScore = function() {
+    console.log("In get score");
+    console.log(score);
+    if (score === 50) {
+      alert('your score is ' +score);
+      $state.go("teleport");
+    }
+  }
+
+}
+
+
+}
+});

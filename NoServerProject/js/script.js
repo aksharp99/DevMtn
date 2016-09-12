@@ -36,6 +36,7 @@ $(document).ready(function() {
     $(this).animate({height: "-=20px", width: "-=20px"}, 'fast')
   });
   //
+  
   $('button').on('click', function() {
 
       $('img').fadeOut(80);

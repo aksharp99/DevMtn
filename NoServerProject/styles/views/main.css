@@ -7,12 +7,22 @@ body {
   background-image: url('http://orig08.deviantart.net/c0a4/f/2009/325/9/e/super_mario_bros__background_by_hyp64.png');
 }
 
-#mario {
+/*img {
 position: relative;
 left: 0;
 top: 0;
+}*/
+#questionblock {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  border-radius: 25px;
 }
-
+#mario {
+  position:relative;
+  left:0;
+  top:0;
+}
 .sectionone {
 height: 645px;
 width: 100px;
