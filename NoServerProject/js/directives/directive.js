@@ -10,7 +10,7 @@ angular.module('marioApp').directive('dmHeader', function($state) {
 
   return {
     restrict: 'AE',
-    
+
     scope: {
       title: '@',
       keepScore: '&'
@@ -54,8 +54,9 @@ angular.module('marioApp').directive('dmHeader', function($state) {
     console.log("In get score");
     console.log(score);
     if (score === 270) {
-      alert('your score is ' +score);
+      alert('YOU WIN!! HIGHSCORE IS: ' +score);
       $state.go("teleport");
+      
     }
   }
 
