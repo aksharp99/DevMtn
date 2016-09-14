@@ -36,7 +36,7 @@ $(document).ready(function() {
     $(this).animate({height: "-=20px", width: "-=20px"}, 'fast')
   });
   //
-  
+
   $('button').on('click', function() {
 
       $('img').fadeOut(80);
@@ -44,7 +44,25 @@ $(document).ready(function() {
 
   })
 
+var space = false;
+$(function() {
+  $(document).keyup(function(event) {
+    if(event.keyCode == 32) {
+      space = false;
 
+    }
+  }).keydown(function(event) {
+    if(event.keyCode == 32) {
+      space = true;
+      console.log('space');
+      $('.blockone').effect('explode',700);
+      $('.blocktwo').effect('explode',800);
+      $('.blockthree').effect('explode',900);
+      $('.blockfour').effect('explode',1000);
+
+    }
+  });
+});
 
 // var select_element = document.getElementById('img');
 

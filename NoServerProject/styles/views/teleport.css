@@ -71,12 +71,38 @@ opacity: 0.6;
 .sectionseven {
   height:645px;
   width: 100px;
-  margin-left: 1162px;
+  margin-left: 1200px;
   position:fixed;
   z-index: -1;
   opacity: 0.6;
 }
 
+.sectioneight {
+  height: 645px;
+  width: 100px;
+  margin-left: 1400px;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.sectionnine {
+  height: 645px;
+  width: 100px;
+  margin-left: 1600px;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.sectionten {
+  height: 645px;
+  width: 100px;
+  margin-left: 1800px;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.6;
+}
 
 .blockone {
   height: 100px;
@@ -339,6 +365,111 @@ opacity: 0.6;
 
 .blocktwentyeight {
 
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+  border-radius: 25px;
+}
+
+.blocktwentynine {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+  border-radius: 25px;
+}
+
+.blockthirty {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: black;
+  border-radius: 25px;
+}
+
+.blockthirtyone {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: green;
+  border-radius: 25px;
+}
+
+.blockthirtytwo {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: blue;
+  border-radius: 25px;
+}
+
+.blockthirtythree {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+  border-radius: 25px;
+}
+
+.blockthirtyfour {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: yellow;
+  border-radius: 25px;
+}
+
+.blockthirtyfive {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: blue;
+  border-radius: 25px;
+}
+
+.blockthirtysix {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: green;
+  border-radius: 25px;
+}
+
+.blockthirtyseven {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: green;
+  border-radius: 25px;
+}
+
+.blockthirtyeight {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: red;
+  border-radius: 25px;
+}
+
+.blockthirtynine {
+  margin-top: 75px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: black;
+  border-radius: 25px;
+}
+
+.blockfourty {
   margin-top: 75px;
   height: 100px;
   width: 100px;
