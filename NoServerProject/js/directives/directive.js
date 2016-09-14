@@ -53,9 +53,9 @@ angular.module('marioApp').directive('dmHeader', function($state) {
   $scope.getScore = function() {
     console.log("In get score");
     console.log(score);
-    if (score === 390) {
-      alert('YOU WIN!! HIGHSCORE IS: ' +score+ '. GO TO NEXT LEVEL AND MATCH THE COLORS!!');
-      $state.go("teleport");
+    if (score === 290) {
+      alert('YOU WIN!! HIGHSCORE IS: ' +score+ '. GO TO NEXT LEVEL AND CRASH BOWSERS WEDDING!!!');
+      $state.go("score");
 
     }
   }
