@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser  = require('body-parser');
-
+var config = require('./config.json');
 var moviesController = require('./controllers/movies_controller');
 var app = express();
 
@@ -12,6 +12,6 @@ app.post('/movies', moviesController.create);
 app.put('/movies/:id', moviesController.update);
 app.delete('/movies/:id', moviesController.destroy);
 
-app.listen(3000, function() {
+app.listen(config.port, function() {
   console.log('I is running ok');
 })
