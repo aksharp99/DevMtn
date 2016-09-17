@@ -32,7 +32,7 @@ var scopeArray1 = ["grandpa","uncle", "cousin"];
 var scopeArray2 = ["dad", "son"];
 
 // Which function(s) access the badjoke variable and get undefined (Delete wrong answers, leave correct ones)
-var scopeArray3 = ["grandpa"];
+var scopeArray3 = ["grandpa","dad","son"];
 
 // Which functions accesss the badjoke variable and get "Har" (Delete wrong answers, leave correct ones)
 var scopeArray4 = ["uncle", "cousin"];
