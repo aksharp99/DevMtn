@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="aksharApp">
+<head>
+  <meta charset="utf-8">
+  <title>Personal API</title>
+</head>
+<body>
+  <h1>Akshar</h1>
+<button ui-sref='aboutMe'>About Me</button>
+<button ui-sref='hobbiesOccupations'>Hobbies and Occupations</button>
+<button ui-sref='skills'>Skills</button>
+
+<ui-view></ui-view>
+
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js'></script>
+   <script src='app.js'></script>
+   <script src='ctrl.js'></script>
+   <script src='mainService.js'></script>
+ </body>
+</html>
