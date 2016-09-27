@@ -1,0 +1,46 @@
+@import 'https://fonts.googleapis.com/css?family=Baloo+Bhai';
+
+
+body {
+
+  background-image: url('https://hd.unsplash.com/photo-1467404899198-ccadbcd96b91');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 40px;
+  color: springgreen;
+}
+
+div {
+  font-family: 'Baloo Bhai', cursive;
+  color: lightsalmon;
+}
+
+label {
+  color:lightsalmon;
+}
+
+span {
+  color:lightsalmon;
+
+}
+
+/*button:nth-of-type(2) div:nth-of-type(4) {
+  color: red;
+}*/
+
+button + div {
+  color:rgb(64,224,208);
+}
+
+#colorchange {
+  color:lightsalmon;
+  font-size: 30px;
+}
+
+input {
+  height: 34px;
+}
