@@ -68,7 +68,7 @@ $scope.myFinalArray = function(response) {
     Artist: response[i].artistName,
     Collection: response[i].collectionCensoredName,
     CollectionPrice: response[i].collectionPrice,
-    Play: response[i].trackViewUrl,
+    Play: response[i].previewUrl,
     Type: response[i].kind
   }
   sortedArray.push(empty);
