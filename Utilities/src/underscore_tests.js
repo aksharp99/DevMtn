@@ -48,8 +48,24 @@ var _ = { };
 
   // Like first, but for the last elements. If n is undefined, return just the
   // last element.
+
   _.last = function(array, n) {
-  };
+    if(!(n)){
+    	return array[array.length-1];
+    } else if (n > array.length){
+    	return array;
+    } else {
+    var x = array.slice((array.length-n), array.length+1)
+
+
+    return x;
+    }
+   }
+
+
+
+
+
 
   // Call iterator(value, key, collection) for each element of collection.
   // Accepts both arrays and objects.
