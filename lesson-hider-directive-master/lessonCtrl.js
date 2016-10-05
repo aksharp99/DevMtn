@@ -5,4 +5,5 @@ angular.module('directivePractice').controller('lessonCtrl', function($scope) {
   $scope.announceDay = function(lesson, day) {
     alert(lesson + ' is active on ' + day + '.');
   }
+  
 })
