@@ -3,3 +3,8 @@ img {
   background-size: cover;
   width: 100%;
 }
+
+.header {
+  color: #ee6e73;
+  font-weight: 300;
+}
