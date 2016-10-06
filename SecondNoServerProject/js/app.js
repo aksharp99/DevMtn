@@ -4,22 +4,22 @@ $urlRouterProvider.otherwise('/');
 
 $stateProvider
 
-.state('home', {
-  url: '/',
-  templateUrl: './index.html',
-  controller: 'homeCtrl'
+.state('price', {
+  url: '/price',
+  templateUrl: './price/price.html',
+  controller: 'priceCtrl'
 })
 
-.state('home', {
-  url: '/',
-  templateUrl: './index.html',
-  controller: 'homeCtrl'
+.state('location', {
+  url: '/location',
+  templateUrl: './location/location.html',
+  controller: 'locationCtrl'
 })
 
-.state('home', {
-  url: '/',
-  templateUrl: './index.html',
-  controller: 'homeCtrl'
+.state('about', {
+  url: '/about',
+  templateUrl: './about/about.html',
+  controller: 'aboutCtrl'
 })
 
 

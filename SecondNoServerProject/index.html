@@ -9,6 +9,30 @@
     <link rel="stylesheet" href="./main.css">
   </head>
   <body ng-controller="mainCtrl">
+    <ui-view></ui-view>
+    <div class="parallax-container">
+      <div class="parallax"><img src="./images/journalpic.jpeg"></div>
+    </div>
+
+    <div class="section white card-panel light-green accent-2">
+      <div class="row container">
+      <h2 class="header brown-text text-darken-4">Welcome</h2>
+      <p class="brown-text text-darken-3 lighten-3">Journal is a service that creates unique tasks for users which syncs with google calendar to provide with seamless calendar entry and offers reminder alerts.</p>
+      <a id="twoast" class="btn" onclick="Materialize.toast('You are awesome :)', 4000)">Click Me!</a>
+      </div>
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="./images/servicepic.jpeg"></div>
+    </div>
+    <div class="section white card-panel light-green accent-2">
+      <div class="row container">
+      <h2 class="header brown-text text-darken-4">Features <span><a id="bigplus" class="btn-floating btn-large waves-effect waves-light red" ui-sref="location"><i class="material-icons"><i class="fa fa-fire" aria-hidden="true"></i></i></a></span></h2>
+      <p class="brown-text text-darken-3 lighten-3">Journal is a service that creates unique tasks for users which syncs with google calendar to provide with seamless calendar entry and offers reminder alerts.</p>
+      </div>
+
+
+  </div>
 
   <div class="parallax-container">
     <div class="parallax"><img src="./images/journalpic.jpeg"></div>
@@ -27,7 +51,7 @@
   </div>
   <div class="section white card-panel light-green accent-2">
     <div class="row container">
-    <h2 class="header brown-text text-darken-4">Features<span> <a id="bigplus" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><i class="fa fa-plus" aria-hidden="true"></i></i></a></span></h2>
+    <h2 class="header brown-text text-darken-4">Features<span> <a id="bigplus" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><i class="fa fa-fire fa-5x" aria-hidden="true"></i></i></a></span></h2>
     <p class="brown-text text-darken-3 lighten-3">Journal is a service that creates unique tasks for users which syncs with google calendar to provide with seamless calendar entry and offers reminder alerts.</p>
     </div>
 
@@ -39,7 +63,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
     <script src="./materialize/js/materialize.js"></script>
     <script src="./js/app.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="./js/controllers/mainCtrl.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/controllers/mainCtrl.js"></script>
+    <script src="./location/locationCtrl.js"></script>
+    <script src="./price/priceCtrl.js"></script>
+      <script src="./about/aboutCtrl.js"></script>
   </body>
 </html>

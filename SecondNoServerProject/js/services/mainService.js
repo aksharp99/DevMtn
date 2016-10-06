@@ -1,8 +1,8 @@
-angular.module('journal').service('mainService', function() {
+angular.module('journal').service('mainService', function($http) {
   this.getApi = function() {
     return $http({
       method: 'GET',
-      url: freegeoip.net/{json}/{216.21.163.235}
+      url: freegeoip.net/json/
     })
   }
 })
