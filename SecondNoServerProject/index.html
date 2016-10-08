@@ -9,94 +9,37 @@
     <link rel="stylesheet" href="./main.css">
   </head>
   <body ng-controller="mainCtrl">
-    <ui-view></ui-view>
-    <div class="parallax-container">
-      <div class="parallax"><img src="./images/journalpic.jpeg"></div>
-    </div>
+  <h1 id="Quick">Quick Directions</h1>
 
-    <div class="section white card-panel light-green accent-2">
-      <div class="row container">
-      <h2 class="header brown-text text-darken-4">Welcome</h2>
-      <p class="brown-text text-darken-3 lighten-3">Journal is a service that creates unique tasks for users which syncs with google calendar to provide with seamless calendar entry and offers reminder alerts.</p>
-      <a id="twoast" class="btn" onclick="Materialize.toast('You are awesome :)', 4000)">Click Me!</a>
-      </div>
-    </div>
+  <label>FROM:
+  <input type="text" placeholder="Enter Current Location Here" ng-model="frominput"></input>
+</label>
+<br>
+<label>TO:
+<input type="text" placeholder="Enter Destination Here" ng-model="toinput"></input>
+</label>
 
-    <div class="parallax-container">
-      <div class="parallax"><img src="./images/servicepic.jpeg"></div>
-    </div>
-    <div class="section white card-panel light-green accent-2">
-      <div class="row container">
-      <h2 class="header brown-text text-darken-4">Features <span><a id="bigplus" class="btn-floating btn-large waves-effect waves-light red" ui-sref="location"><i class="material-icons"><i class="fa fa-fire" aria-hidden="true"></i></i></a></span></h2>
-      <p class="brown-text text-darken-3 lighten-3">Journal is a service that creates unique tasks for users which syncs with google calendar to provide with seamless calendar entry and offers reminder alerts.</p>
-      </div>
+<button class="waves-effect waves-light btn" ng-click="getSteps()">DRIVE</button>
 
+<button class="waves-effect waves-light btn" ng-click="getAnotherApi(frominput, toinput)">DRIVE AGAIN</button>
 
-  </div>
-
-  <div class="parallax-container">
-    <div class="parallax"><img src="./images/journalpic.jpeg"></div>
-  </div>
-
-  <div class="section white card-panel light-green accent-2">
-    <div class="row container">
-    <h2 class="header brown-text text-darken-4">Welcome</h2>
-    <p class="brown-text text-darken-3 lighten-3">Journal is a service that creates unique tasks for users which syncs with google calendar to provide with seamless calendar entry and offers reminder alerts.</p>
-    <a id="twoast" class="btn" onclick="Materialize.toast('You are awesome :)', 4000)">Click Me!</a>
-    </div>
-  </div>
-
-  <div class="parallax-container">
-    <div class="parallax"><img src="./images/servicepic.jpeg"></div>
-  </div>
-  <!-- <div class="section white card-panel light-green accent-2">
-    <div class="row container">
-    <h2 class="header brown-text text-darken-4">Features<span> <a id="bigplus" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><i class="fa fa-fire fa-5x" aria-hidden="true"></i></i></a></span></h2>
-    <p class="brown-text text-darken-3 lighten-3">Journal is a service that creates unique tasks for users which syncs with google calendar to provide with seamless calendar entry and offers reminder alerts.</p>
-    </div>
-  </div> -->
-
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="brown-text text-darken-4">Help Us Grow</h5>
-          <p class="brown-text text-darken-3 lighten-3">If you feel Journal has helped you out and want to support the team, send us over a donation! Any amount would help support and continue development on this project and is greatly appreciated</p>
-        </div>
-        <!-- <div id="rightlink" class="col l4 offset-12 s12">
-          <h5 class="brown-text text-darken-4">Links</h5>
-          <ul>
-            <li><a class="brown-text text-darken-3 lighten-3 " href="#!">Link 1</a></li>
-            <li><a class="brown-text text-darken-3 lighten-3"
-            href="#!">Link 2</a></li>
-            <li><a class="brown-text text-darken-3 lighten-3"
-            href="#!">Link 3</a></li>
-            <li><a class="brown-text text-darken-3 lighten-3" href="#!">Link 4</a></li>
-          </ul>
-        </div> -->
-        <div class="col l6 s12">
-          <h5 class="brown-text text-darken-4">Join the Discussion</h5>
-          <p class="brown-text text-darken-3 lighten-3">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions, or anything else you can think of.</p>
-        </div>
-      </div>
-    </div>
-  <div class="footer-copyright">
-    <div class="container brown-text text-darken-4">
-        © 2016 Copyright Patel
-    <a class="brown-text text-darken-4 right" href="#!">More Links</a>
-  </div>
+<div ng-repeat="step in steps">
+{{step.html_instructions}}
 </div>
-</footer>
 
-  <script src="http://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+
+  <!-- <script src="http://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
-    <script src="./materialize/js/materialize.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+    <!-- <script src="./materialize/js/materialize.js"></script> -->
     <script src="./js/app.js"></script>
-    <script src="./js/script.js"></script>
+
     <script src="./js/controllers/mainCtrl.js"></script>
     <script src="./location/locationCtrl.js"></script>
     <script src="./price/priceCtrl.js"></script>
-      <script src="./about/aboutCtrl.js"></script>
+    <script src="./about/aboutCtrl.js"></script>
+    <script src="./js/services/mainService.js"></script>
+
   </body>
 </html>
