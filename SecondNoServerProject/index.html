@@ -5,11 +5,12 @@
     <title>No Server</title>
 
     <link rel="stylesheet" href="./materialize/css/materialize.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <link rel="stylesheet" href="./main.css">
   </head>
   <body ng-controller="mainCtrl">
-  <h1 id="Quick">Quick Directions</h1>
+  <h1 id="Quick">Quick Directions <i class="medium material-icons">swap_calls</i></h1>
 
   <label>FROM:
   <input type="text" placeholder="Enter Current Location Here" ng-model="frominput"></input>
@@ -24,8 +25,14 @@
 
 <button class="waves-effect waves-light btn" ng-click="directionReverseApi(toinput,frominput)">DRIVE BACK</button>
 
+<div class="progress">
+  <div class="indeterminate"></div>
+</div>
+
 <div ng-repeat="step in steps">
-{{step.html_instructions}}
+  <ul class="collection">
+      <li class="collection-item">{{step.html_instructions}}</li>
+  </ul>
 </div>
 
 
