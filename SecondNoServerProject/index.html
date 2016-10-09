@@ -19,9 +19,10 @@
 <input type="text" placeholder="Enter Destination Here" ng-model="toinput"></input>
 </label>
 
-<button class="waves-effect waves-light btn" ng-click="getSteps()">DRIVE</button>
 
-<button class="waves-effect waves-light btn" ng-click="getAnotherApi(frominput, toinput)">DRIVE AGAIN</button>
+<button class="waves-effect waves-light btn" ng-click="directionApi(frominput, toinput)">DRIVE</button>
+
+<button class="waves-effect waves-light btn" ng-click="directionReverseApi(toinput,frominput)">DRIVE BACK</button>
 
 <div ng-repeat="step in steps">
 {{step.html_instructions}}
