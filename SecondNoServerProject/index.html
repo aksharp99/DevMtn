@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="./main.css">
   </head>
   <body ng-controller="mainCtrl">
-  <h1 id="Quick">Quick Directions <i class="medium material-icons">swap_calls</i></h1>
-
+  <dm-header></dm-header>
   <label>FROM:
   <input type="text" placeholder="Enter Current Location Here" ng-model="frominput"></input>
 </label>
@@ -25,22 +24,24 @@
 
 <button class="waves-effect waves-light btn" ng-click="directionReverseApi(toinput,frominput)">DRIVE BACK</button>
 
+
 <div class="progress">
   <div class="indeterminate"></div>
 </div>
 
 <div ng-repeat="step in steps">
   <ul class="collection">
-      <li class="collection-item">{{step.html_instructions}}</li>
+      <li id="bite" class="collection-item">{{step.html_instructions}}</li>
   </ul>
 </div>
 
 
-  <!-- <script src="http://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script> -->
+
+  <script src="http://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
-    <!-- <script src="./js/script.js"></script> -->
-    <!-- <script src="./materialize/js/materialize.js"></script> -->
+     <script src="./js/script.js"></script>
+     <script src="./materialize/js/materialize.js"></script>
     <script src="./js/app.js"></script>
 
     <script src="./js/controllers/mainCtrl.js"></script>
@@ -48,6 +49,7 @@
     <script src="./price/priceCtrl.js"></script>
     <script src="./about/aboutCtrl.js"></script>
     <script src="./js/services/mainService.js"></script>
+    <script src="./js/directives/dmHeader.js"></script>
 
   </body>
 </html>
