@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="journal">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <link rel="stylesheet" href="./materialize/css/materialize.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+  </head>
+  <body ng-controller="demoCtrl">
+  <dm-header></dm-header>
+  <label>FROM:
+  <input type="text" placeholder="Enter Current Location Here" ng-model="frominput"></input>
+</label>
+<br>
+<label>TO:
+<input type="text" placeholder="Enter Destination Here" ng-model="toinput"></input>
+</label>
+
+
+<button class="waves-effect waves-light btn" ng-click="directionApi(frominput, toinput)">DRIVE</button>
+
+<button class="waves-effect waves-light btn" ng-click="directionReverseApi(toinput,frominput)">DRIVE BACK</button>
+
+<button class="waves-effect waves-light btn"><a href="./index.html"><span class="white-text">HOME</button>
+
+
+<div class="progress">
+  <div class="indeterminate"></div>
+</div>
+
+<div ng-repeat="step in steps">
+  <ul class="collection">
+      <li id="bite" class="collection-item">{{step.html_instructions}} <span id="pond"><strong>{{step.distance.text}}</strong></span></li>
+  </ul>
+</div>
+
+    <script src="./jquery-3.1.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+  <script src="./app.js"></script>
+  <script src="./demoCtrl.js"></script>
+  <script src="./mainService.js"></script>
+  <script src="./dmHeader.js"></script>
+  </body>
+</html>

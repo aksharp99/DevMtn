@@ -1,0 +1,28 @@
+img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+#twoast {
+  background-color: #3e2723;
+}
+
+#bigplus {
+margin-left: 64%;
+padding-bottom: 5px;
+}
+
+label {
+  font-size: 1.8rem;
+  color: #9e9e9e;
+}
+
+#Quick {
+  text-align: center;
+}
+
+#pond {
+  display: flex;
+  justify-content: flex-end;
+}

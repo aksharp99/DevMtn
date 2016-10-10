@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ng-app="journal">
+  <head>
+    <meta charset="utf-8">
+    <title>No Server</title>
+
+    <link rel="stylesheet" href="./materialize/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body ng-controller="mainCtrl">
+
+    <div class="parallax-container">
+      <div class="parallax"><img ng-src="./journalpic.jpeg"></div>
+    </div>
+
+    <div class="section white card-panel light-green accent-2">
+      <div class="row container">
+      <h2 class="header brown-text text-darken-4">Welcome</h2>
+      <p class="brown-text text-darken-3 lighten-3">Quick Directions is a service that assists bikers with quick navigation routes in an easy to read and super accesible navigation application that enables end users to remove distractions and foresee their location ahead of the game.</p>
+      <a id="twoast" class="btn" onclick="Materialize.toast('Check out our features below :)', 4000)">Click Me!</a>
+      </div>
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img ng-src="./servicepic.jpeg"></div>
+    </div>
+    <div class="section white card-panel light-green accent-2">
+      <div class="row container">
+      <h2 class="header brown-text text-darken-4">Features <span><a id="bigplus" class="btn-floating btn-large waves-effect waves-light red" href="./demo.html"><i class="material-icons"><i class="fa fa-fire" aria-hidden="true"></i></i></a></span></h2>
+      <p class="brown-text text-darken-3 lighten-3">Simply enter your origin and destination and we will provide you with a user friendly route to route endpoints that will help you reach your destination. For a quick demo, click on the red button.</p>
+      </div>
+
+
+  </div>
+
+  <div class="parallax-container">
+    <div class="parallax"><img ng-src="./journalpic.jpeg"></div>
+  </div>
+
+  <div class="section white card-panel light-green accent-2">
+    <div class="row container">
+    <h2 class="header brown-text text-darken-4">Frequently Asked Questions</h2>
+
+    <ul class="brown-text text-darken-3 lighten-3 collapsible" data-collapsible="accordion">
+      <li>
+     <div class="collapsible-header"><i class="material-icons">my_location</i>How Do I Get Started?</div>
+     <div class="collapsible-body"><p>In the Demo, simply enter your origin and destination. We will take care of the rest.</p></div>
+   </li>
+   <li>
+     <div class="collapsible-header"><i class="material-icons">navigation</i>Who Can Use This Application?</div>
+     <div class="collapsible-body"><p>Anyone from bikers, cyclists, to old grandmothers out on a wheelchair stroll will find this application useful by providing them quick routers to their respective destinations.</p></div>
+   </li>
+   <li>
+     <div class="collapsible-header"><i class="material-icons">language</i>Can I Use This Application Internationally?</div>
+     <div class="collapsible-body"><p>Yes, you can!</p></div>
+   </li>
+ </ul>
+
+    </div>
+  </div>
+
+  <div class="parallax-container">
+    <div class="parallax"><img ng-src="./servicepic.jpeg"></div>
+  </div>
+
+
+  <footer class="page-footer light-green accent-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="brown-text text-darken-4">Help Us Grow</h5>
+          <p class="brown-text text-darken-3 lighten-3">If you feel Journal has helped you out and want to support the team, send us over a donation! Any amount would help support and continue development on this project and is greatly appreciated</p>
+        </div>
+
+        <div class="col l6 s12">
+          <h5 class="brown-text text-darken-4">Join the Discussion</h5>
+          <p class="brown-text text-darken-3 lighten-3">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions, or anything else you can think of.</p>
+        </div>
+      </div>
+    </div>
+  <div class="footer-copyright">
+    <div class="container brown-text text-darken-4">
+        © 2016 Copyright Patel
+    <a class="brown-text text-darken-4 right" href="#!">More Links</a>
+  </div>
+</div>
+</footer>
+
+  <script src="./jquery-3.1.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src="./script.js"></script>
+    <script src="./materialize/js/materialize.js"></script>
+    <script src="./materialize/css/materialize.css"></script>
+    <script src="./app.js"></script>
+    <script src="./mainCtrl.js"></script>
+
+
+  </body>
+</html>
