@@ -17,7 +17,7 @@ angular.module('journal').directive('dmHeader', function() {
     },
 
     link: function(scope, element, attributes) {
-      element.on('click', function(event) {
+      element.on('mouseenter', function(event) {
         var newColor = getColor();
         var targetElement = element.find('#Quick');
         setInterval(function() {

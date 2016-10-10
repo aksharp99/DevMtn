@@ -21,3 +21,8 @@ label {
 #Quick {
   text-align: center;
 }
+
+#pond {
+  display: flex;
+  justify-content: flex-end;
+}
