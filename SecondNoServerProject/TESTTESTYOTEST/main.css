@@ -26,3 +26,22 @@ label {
   display: flex;
   justify-content: flex-end;
 }
+
+.material-icons {
+  font-size:36px;
+}
+
+#blink {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#slink {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#email {
+  display: flex;
+  justify-content:center;
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./main.css">
   </head>
   <body ng-controller="demoCtrl">
+    <ui-view></ui-view>
   <dm-header></dm-header>
   <label>FROM:
   <input type="text" placeholder="Enter Current Location Here" ng-model="frominput"></input>
@@ -22,8 +23,11 @@
 
 <button class="waves-effect waves-light btn" ng-click="directionReverseApi(toinput,frominput)">DRIVE BACK</button>
 
-<button class="waves-effect waves-light btn"><a href="./index.html"><span class="white-text">HOME</button>
+<a href="./index.html"><button class="waves-effect waves-light btn"><span class="white-text"><i id="blink" class="material-icons">home</i></button></a>
 
+<button class="waves-effect waves-light btn" ui-sref="demox"><span class="white-text"><i id="blink" class="material-icons">email</i></button>
+
+<button class="waves-effect waves-light btn" ui-sref="demoy"><span class="white-text"><i id="blink" class="material-icons">phone</i></button>
 
 <div class="progress">
   <div class="indeterminate"></div>
@@ -37,9 +41,12 @@
 
     <script src="./jquery-3.1.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
   <script src="./app.js"></script>
   <script src="./demoCtrl.js"></script>
   <script src="./mainService.js"></script>
   <script src="./dmHeader.js"></script>
+  <script src="./demoxCtrl.js"></script>
+  <script src="./demoyCtrl.js"></script>
   </body>
 </html>
