@@ -22,6 +22,7 @@ app.get('/', function(req, res) {
 app.post('/', function(req, res) {
   console.log(req.body);
   messages.push({
+    username: req.body.username,
     message: req.body.message,
     time: new Date()
   });
