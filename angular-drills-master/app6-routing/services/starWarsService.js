@@ -15,6 +15,7 @@ angular.module('routingApp').service('starWarsService', function($http) {
       url: url
     }).then(function(response) {
       return response.data;
+      console.log('this is the response.data',response.data);
     })
   }
 })

@@ -15,7 +15,7 @@ $stateProvider
 })
 .state('details', {
   controller: 'detailsController',
-  url: '/details/:url',
+  url: '/details/:id',
   templateUrl: 'details/details.html'
 })
 //Change details state
