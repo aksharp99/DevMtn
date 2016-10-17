@@ -15,8 +15,10 @@ app.use(session({secret: keys.expressSecret}))
 
 app.post("/api/screenname", function(req, res){
   // TODO Save screenname to session
-  // console.log("Got screenname: ", req.body.name);
+  console.log("Got screenname: ", req.body.name);
+  console.log("This is the message: ",req.body.message);
   req.session.screenname = req.body.name;
+
 
 })
 

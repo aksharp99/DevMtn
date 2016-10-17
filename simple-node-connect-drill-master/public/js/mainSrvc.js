@@ -9,8 +9,8 @@ angular.module("myChats").service("mainSrvc", function($http){
       if(response.status === 200) {
         return response.data;
       }
-    })
-  }
+    });
+  };
 
   this.addChats = function(chat){
     //TODO Call server to add to chats
@@ -18,8 +18,8 @@ angular.module("myChats").service("mainSrvc", function($http){
       method: 'POST',
       url:'/api/chats',
       data:{message: chat}
-    })
-  }
+    });
+  };
 
   this.deleteChats = function(){
     //TODO Call server to whipe all the chats
@@ -30,6 +30,6 @@ angular.module("myChats").service("mainSrvc", function($http){
       method:'POST',
       url:'/api/screenname',
       data: {name: screenname}
-    })
-  }
+    });
+  };
 });

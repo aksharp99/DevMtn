@@ -7,7 +7,7 @@ module.exports = {
   },
   postChats:function(req,res){
     // TODO write postChats
-    var chatMessage = req.body;
+    var chatMessage = req.body.message;
     var sn= req.session.screenname;
 
     chatMessage.screenname = sn;
