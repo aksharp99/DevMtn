@@ -1,3 +1,26 @@
-body {
-  background-color: springgreen;
+.body-wrapper {
+  margin-top: 90px;
+}
+
+div {
+  display:block;
+}
+
+nav {
+  display:block;
+}
+
+#fixtop {
+  position: fixed;
+  top:0px;
+}
+
+.topbar {
+  left: 0;
+  right: 0;
+  padding: 0px 15px;
+  background-color: white;
+  z-index: 4;
+  height: 45px;
+  border-bottom: 1px solid #e5e5e5;
 }
