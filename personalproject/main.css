@@ -75,6 +75,9 @@ input {
   position:absolute;
   margin-top: 13px;
   margin-left: 10px;
+  border-radius: 50px;
+  height: 20px;
+
 }
 
 @media screen and (max-width: 800px) {
@@ -85,4 +88,5 @@ input {
   input {
     display: none;
   }
+
 }
