@@ -37,6 +37,10 @@ nav {
   margin: 0 auto;
 }
 
+.content {
+  margin-left:10vw;
+}
+
 .topbar .fl {
   float:left;
 }
@@ -44,4 +48,10 @@ nav {
 #hamburger {
   height:46px;
   width: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    margin-left:0px;
+  }
 }
