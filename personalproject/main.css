@@ -24,3 +24,24 @@ nav {
   height: 45px;
   border-bottom: 1px solid #e5e5e5;
 }
+
+.topbar #logo {
+  height: 45px;
+  width: 102px;
+  display: inline-block;
+  background: url('./jane-logo_360.png') no-repeat left;
+  background-size: 102px 20px;
+  position: absolute;
+  left:0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.topbar .fl {
+  float:left;
+}
+
+#hamburger {
+  height:46px;
+  width: 50px;
+}
