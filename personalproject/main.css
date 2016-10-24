@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+
 .body-wrapper {
   margin-top: 90px;
 }
@@ -48,6 +50,21 @@ nav {
   width: 50px;
   margin-right: 5px;
 }
+
+.textvalignmiddle {
+  line-height: normal;
+}
+
+#tag {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: bolder;
+margin-bottom: 39px;
+line-height: 1em;
+vertical-align: middle;
+display: inline-block;
+}
+
 
 
 @media screen and (max-width: 800px) {
