@@ -90,6 +90,7 @@ display: inline-block;
 position: relative;
 overflow: visible;
 cursor: pointer;
+
 }
 
 .icon-wrapper i {
@@ -106,11 +107,13 @@ a {
   font-family: 'Proxima-Nova', sans-serif;
   color: #333;
   position: relative;
+
+
 }
 
 
 .favorites {
-  margin-right: 15px;
+  /*margin-right: 15px;*/
 }
 @media screen and (max-width: 800px) {
   .content {
