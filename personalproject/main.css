@@ -123,8 +123,29 @@ a {
   margin-right: 20px;
 }
 
-.favorites {
-  /*margin-right: 15px;*/
+#category-bar {
+  position: fixed;
+  top:45px;
+  left:0;
+  right:0;
+  background-color: white;
+  height:45px;
+  line-height: 45px;
+  z-index: 3;
+  color: #999;
+  user-select: none;
+  padding:0 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#category-bar .j-horizontal-list {
+  background-color: white;
+  height: 45px;
+  text-align: center;
+  overflow: hidden;
+  max-width: 1330px;
+  margin:0 auto;
+  font-size: 14px;
 }
 @media screen and (max-width: 800px) {
   .content {
