@@ -111,6 +111,17 @@ a {
 
 }
 
+#right {
+  margin-right: 10vw;
+}
+
+#baglogo {
+  margin-right: 20px;
+}
+
+#favlogo {
+  margin-right: 20px;
+}
 
 .favorites {
   /*margin-right: 15px;*/
