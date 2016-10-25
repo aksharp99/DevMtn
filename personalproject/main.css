@@ -131,6 +131,24 @@ a {
     margin-left:0px;
   }
 
+@media screen and (max-width: 880px) {
+  #heart {
+    margin-right: 15px;
+  }
+
+  #favlogo {
+    display: none;
+  }
+
+  #baglogo {
+    display: none;
+  }
+
+  #right {
+    display: none;
+  }
+}
+
   input {
     display: none;
   }
