@@ -80,6 +80,38 @@ input {
 
 }
 
+.fr {
+  float:right;
+  margin-top: -70px;
+}
+
+.icon-wrapper {
+display: inline-block;
+position: relative;
+overflow: visible;
+cursor: pointer;
+}
+
+.icon-wrapper i {
+line-height: 45px;
+color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #36c6b1;
+}
+
+.icon-wrapper .icon-title {
+  font-family: 'Proxima-Nova', sans-serif;
+  color: #333;
+  position: relative;
+}
+
+
+.favorites {
+  margin-right: 15px;
+}
 @media screen and (max-width: 800px) {
   .content {
     margin-left:0px;
