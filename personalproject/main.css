@@ -164,12 +164,12 @@ width: 1377px;
   letter-spacing: .6px;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .content {
     margin-left:0px;
   }
 
-@media screen and (max-width: 880px) {
+@media (max-width: 880px) {
   #heart {
     margin-right: 15px;
   }
@@ -200,6 +200,8 @@ width: 1377px;
   }
 }
 
-@media screen and (min-width: 869px) {
-  
+@media (min-width: 870px) {
+  #sneak {
+    margin-right: 134px;
+  }
 }
