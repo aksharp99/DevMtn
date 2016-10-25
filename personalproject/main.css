@@ -201,7 +201,7 @@ width: 1377px;
 }
 
 @media (min-width: 870px) {
-  #sneak {
+  #category-bar .list-wrapper #sneak {
     margin-right: 134px;
   }
 }
