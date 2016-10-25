@@ -147,6 +147,22 @@ a {
   margin:0 auto;
   font-size: 14px;
 }
+
+#category-bar .list-wrapper {
+width: 1005px;
+}
+
+#category-bar .list-wrapper .list-item {
+  display:inline;
+  color:#333;
+  font:200 14px 'Proxima-Nova', sans-serif;
+  margin-right: 10px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 15px 0px;
+  letter-spacing: .6px;
+}
+
 @media screen and (max-width: 800px) {
   .content {
     margin-left:0px;
