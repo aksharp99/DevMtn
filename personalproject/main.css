@@ -194,6 +194,26 @@ width: 1377px;
 
 }
 
+@media (max-width: 1184px) {
+  #category-bar .list-wrapper #sneak {
+    display: none;
+  }
+
+  #category-bar .list-wrapper #popular {
+    margin-right: 226px;
+  }
+}
+
+@media (max-width: 1084px) {
+  #category-bar .list-wrapper #sneak {
+    display: none;
+  }
+
+  #category-bar .list-wrapper #popular {
+    margin-right: 342px;
+  }
+}
+
 @media (min-width: 1005px) {
   #category-bar .list-wrapper .list-item {
     margin-right: 15px;
@@ -204,15 +224,5 @@ width: 1377px;
 @media (min-width: 870px) {
   #category-bar .list-wrapper #sneak {
     margin-right: 134px;
-  }
-}
-
-@media (max-width: 1184px) {
-  #category-bar .list-wrapper #sneak {
-    display: none;
-  }
-
-  #category-bar .list-wrapper #popular {
-    margin-right: 226px;
   }
 }
