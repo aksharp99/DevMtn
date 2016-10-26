@@ -30,6 +30,7 @@ nav {
   z-index: 4;
   height: 45px;
   border-bottom: 1px solid #e5e5e5;
+
 }
 
 .topbar #logo {
@@ -137,6 +138,7 @@ a {
   user-select: none;
   padding:0 15px;
   border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
 }
 
 #category-bar .j-horizontal-list {
@@ -214,15 +216,21 @@ width: 1377px;
   }
 }
 
-@media (min-width: 1005px) {
+
+@media (min-width: 1017px) {
   #category-bar .list-wrapper .list-item {
     margin-right: 15px;
     font-size: 16px;
   }
+
 }
+
+
+
 
 @media (min-width: 870px) {
   #category-bar .list-wrapper #sneak {
     margin-right: 134px;
   }
+
 }
