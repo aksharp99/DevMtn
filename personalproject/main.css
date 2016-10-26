@@ -54,6 +54,7 @@ nav {
   height:46px;
   width: 50px;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .textvalignmiddle {
@@ -203,5 +204,15 @@ width: 1377px;
 @media (min-width: 870px) {
   #category-bar .list-wrapper #sneak {
     margin-right: 134px;
+  }
+}
+
+@media (max-width: 1184px) {
+  #category-bar .list-wrapper #sneak {
+    display: none;
+  }
+
+  #category-bar .list-wrapper #popular {
+    margin-right: 226px;
   }
 }
