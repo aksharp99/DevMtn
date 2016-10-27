@@ -5,6 +5,10 @@
     src: url('./fonts/proximanova-light-webfont.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Azo Sans thin';
+  src: url('./fonts/azosans-thin-webfont.woff') format('woff');
+}
 .body-wrapper {
   margin-top: 90px;
 }
@@ -236,6 +240,15 @@ width: 1377px;
   #category-bar .list-wrapper .list-item {
     display: none;
   }
+
+  #shopby {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Azo Sans thin', sans-serif;
+    font-weight: 200;
+    color: #999;
+  }
+
 }
 
 
