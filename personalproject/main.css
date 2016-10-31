@@ -196,6 +196,13 @@ width: 1377px;
   letter-spacing: .6px;
 }
 
+#landing-page .centerbanner {
+  padding-top: 10px;
+  overflow: hidden;
+  margin: 0 auto 5px;
+  max-width: 295px;
+}
+
 @media (max-width: 800px) {
   .content {
     margin-left:0px;
@@ -254,6 +261,12 @@ width: 1377px;
 
 }
 
+@media (min-width: 1005px) {
+  #landing-page .centerbanner {
+    max-width: 975px;
+  }
+}
+
 @media (max-width: 950px) {
   #category-bar .list-wrapper .list-item {
     display: none;
@@ -279,4 +292,12 @@ width: 1377px;
     margin-right: 134px;
   }
 
+}
+
+@media (min-width: 680px) {
+  #landing-page .centerbanner {
+    max-width: 650px;
+    padding-top: 30px;
+    margin:0 auto 30px;
+  }
 }
