@@ -220,6 +220,10 @@ width: 1377px;
   overflow:hidden;
 }
 
+#fullwidth {
+  width: 100%;
+}
+
 @media (max-width: 800px) {
   .content {
     margin-left:0px;
