@@ -9,6 +9,22 @@
   font-family: 'Azo Sans thin';
   src: url('./fonts/azosans-thin-webfont.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Azo Sans';
+  src: url('./fonts/azosans-regular-webfont.woff') format('woff');
+}
+html {
+  box-sizing: border-box;
+  font: 200 16px/24px 'Azo Sans', sans-serif, serif;
+  color: #666;
+  background: #F3F3F3;
+}
+
+i.fa.fa-angle-down {
+  display: none;
+}
+
 .body-wrapper {
   margin-top: 90px;
 }
@@ -116,6 +132,8 @@ a {
 
 
 }
+
+
 
 #shopby {
   display: none;
@@ -245,12 +263,16 @@ width: 1377px;
     display: flex;
     justify-content: flex-start;
     font-family: 'Azo Sans thin', sans-serif;
+    font-size: 13px;
     font-weight: 200;
     color: #999;
   }
 
-}
+  i.fa.fa-angle-down {
+    display:block;
+  }
 
+}
 
 @media (min-width: 870px) {
   #category-bar .list-wrapper #sneak {
