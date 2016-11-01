@@ -226,10 +226,10 @@ width: 1377px;
   border: none;
 }
 
-/*#fullwidth {
-  width: 100%;
-}*/
-
+.alldeals {
+  margin: 0 15px;
+  
+}
 
 @media (max-width: 800px) {
   .content {
@@ -300,6 +300,13 @@ width: 1377px;
     max-width: 100%;
   }
 }
+/*all deals responsive*/
+@media (min-width: 1005px) {
+  .alldeals {
+    width: 975px;
+  }
+}
+/*all deals responsive*/
 
 @media (max-width: 950px) {
   #category-bar .list-wrapper .list-item {
@@ -349,6 +356,15 @@ width: 1377px;
     max-width: none;
   }
 }
+
+/*all deals responsive*/
+@media (min-width: 680px) {
+  .alldeals {
+    width: 650px;
+    margin: 0 auto;
+  }
+}
+/*all deals responsive*/
 
 @media (max-width: 680px) {
   #landing-page .centerbanner .secondbanner {
