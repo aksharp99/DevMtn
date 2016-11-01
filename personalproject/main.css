@@ -233,7 +233,8 @@ width: 1377px;
   display: -ms-flexbox;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  /*justify-content: flex-start;*/
+  justify-content: center;
 }
 
 @media (max-width: 800px) {
@@ -305,13 +306,6 @@ width: 1377px;
     max-width: 100%;
   }
 }
-/*all deals responsive*/
-@media (min-width: 1005px) {
-  .alldeals {
-    width: 975px;
-  }
-}
-/*all deals responsive*/
 
 @media (max-width: 950px) {
   #category-bar .list-wrapper .list-item {
@@ -365,7 +359,8 @@ width: 1377px;
 /*all deals responsive*/
 @media (min-width: 680px) {
   .alldeals {
-    width: 650px;
+    /*width: 650px;*/
+    min-width: 975px;
     margin: 0 auto;
   }
 }
