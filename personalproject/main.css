@@ -228,7 +228,12 @@ width: 1377px;
 
 .alldeals {
   margin: 0 15px;
-  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 @media (max-width: 800px) {
