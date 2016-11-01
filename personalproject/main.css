@@ -342,9 +342,16 @@ width: 1377px;
   #landing-page .centerbanner .secondbanner {
     display: inline-block;
     margin: 0px 15px;
+
   }
 
   #landing-page .centerbanner .secondbanner img {
     max-width: none;
+  }
+}
+
+@media (max-width: 680px) {
+  #landing-page .centerbanner .secondbanner {
+    display: none;
   }
 }
