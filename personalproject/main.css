@@ -276,6 +276,11 @@ width: 1377px;
   margin: 30px auto;
 }
 
+.seemore:hover {
+  color: #36c6b1;
+  cursor: pointer;
+}
+
 .end {
   height: 215px;
   background-color: white;
