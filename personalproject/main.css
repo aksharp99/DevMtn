@@ -257,6 +257,25 @@ width: 1377px;
 
 }
 
+.seemore {
+  height:37px;
+  width:108px;
+  display:inline-block;
+  background-color: #7cd8cb;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  padding-top:11px;
+  padding-right:15px;
+  padding-bottom: 0px;
+  padding-left:15px;
+  position: absolute;
+  left:0;
+  right:0;
+
+  margin: 30px auto;
+}
+
 @media (max-width: 800px) {
   .content {
     margin-left:0px;
