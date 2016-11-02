@@ -1,7 +1,13 @@
-;(function() {
+(function() {
   var previousScroll = 0;
   var navbar = document.getElementById('category-bar');
   navClasses = navbar.classList;
+
+  // var navbar = document.getElementsByClassName('list-wrapper')[0];
+  // navClasses = navbar.classList;
+
+  console.log('this is the navbar: ',navbar);
+  console.log('this is the navClasses: ',navClasses);
 
   window.addEventListener('scroll', function(e) {
     var currentScroll = window.scrollY;

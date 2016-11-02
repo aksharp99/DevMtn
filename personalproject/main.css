@@ -67,6 +67,7 @@ nav {
 
 .content {
   margin-left:10vw;
+  /*background-color: white;*/
 }
 
 
@@ -194,10 +195,12 @@ a {
   max-width: 1330px;
   margin:0 auto;
   font-size: 14px;
+  /*z-index: -90;*/
 }
 
 #category-bar .list-wrapper {
 width: 1377px;
+/*z-index: -90;*/
 
 }
 
@@ -308,6 +311,7 @@ width: 1377px;
   #category-bar .list-wrapper .list-item {
     margin-right: 15px;
     font-size: 16px;
+    /*z-index: -90;*/
   }
 
 }
