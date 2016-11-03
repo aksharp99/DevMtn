@@ -334,13 +334,20 @@ text-align: center;
 }
 
 .centerthis {
-  background-color: springgreen;
+  background-color: white;
+  /*background: url('./img/deals/34508.jpg') no-repeat center center fixed;*/
+
   height: 55vh;
   text-align: center;
   overflow: hidden;
   max-width: 1330px;
   margin:0 auto;
   font-size: 14px;
+}
+
+.leftthumbnail {
+  position: absolute;
+  left:20;
 }
 
 @media (max-width: 800px) {
