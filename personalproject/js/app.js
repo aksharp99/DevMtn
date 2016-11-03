@@ -8,7 +8,13 @@ angular.module('myapp',['ui.router'])
   .state('homebody', {
     url:'/',
     templateUrl: '../homebody.html',
-    controller: 'homebodyCtrl.js'
+    controller: 'homebodyCtrl'
+  })
+
+  .state('productview', {
+    url:'/productview',
+    templateUrl: '../productview.html',
+    controller: 'productviewCtrl'
   })
 
 })
