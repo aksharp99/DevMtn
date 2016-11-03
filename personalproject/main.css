@@ -348,6 +348,7 @@ text-align: center;
 .leftthumbnail {
   position: absolute;
   left:20;
+  padding: 50px;
 }
 
 @media (max-width: 800px) {
