@@ -338,17 +338,43 @@ text-align: center;
   /*background: url('./img/deals/34508.jpg') no-repeat center center fixed;*/
 
   height: 55vh;
-  text-align: center;
   overflow: hidden;
   max-width: 1330px;
   margin:0 auto;
-  font-size: 14px;
+
 }
 
 .leftthumbnail {
   position: absolute;
   left:20;
   padding: 50px;
+}
+
+.lefttext {
+
+    /*background-color: springgreen;*/
+    border-top: 1px solid #e5e5e5;
+    width: 660px;
+    height:100px;
+    position:absolute;
+    bottom: 0;
+    margin-bottom: 380px;
+    margin-left: 50px;
+    /*margin-top:192px;*/
+}
+
+.testit {
+  display:flex;
+  justify-content: space-around;
+}
+
+.testit span {
+  font-family: 'Proxima-Nova',sans-serif;
+  color:#333;
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 20px;
+
 }
 
 @media (max-width: 800px) {
