@@ -350,9 +350,43 @@ text-align: center;
   padding: 50px;
 }
 
+.rightthumbnail {
+  /*background-color: springgreen;*/
+  height: 341px;
+  width: 376px;
+  float:right;
+  margin-top:50px;
+  margin-right: 50px;
+}
+
+.title {
+  font-family: 'Azo Sans thin',sans-serif;
+  font-size: 22px;
+  width: 279px;
+  height: 86px;
+}
+
+.titlemargin {
+  /*background-color: springgreen;*/
+  width:auto;
+  margin-bottom:17px;
+  }
+
+  .price {
+    font-family: 'Proxima-Nova',sans-serif;
+    color: #999999;
+    position:relative;
+  }
+
+  .price span {
+    color: #ff8188;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
 .lefttext {
 
-    /*background-color: springgreen;*/
+
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     width: 660px;
