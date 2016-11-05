@@ -389,6 +389,13 @@ text-align: center;
     text-decoration: line-through;
   }
 
+  #box {
+    display: inline;
+    background-color: springgreen;
+    height:27px;
+    width:56px;
+  }
+
 .lefttext {
 
 

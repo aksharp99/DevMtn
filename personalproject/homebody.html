@@ -18,30 +18,9 @@
           </div>
           <div>
             <div class="alldeals">
-              <div id="deal-260847" class="alldeal">
-      <a ui-sref="productview"><img src="./img/deals/34508.jpg"/></a>
-    </div>
-    <div id="deal-251045" class="alldeal">
-      <img src="./img/deals/20485.jpg"/>
-    </div>
-    <div id="deal-590123" class="alldeal">
-      <img src="./img/deals/22218.jpg"/>
-    </div>
-    <div id="deal-590125" class="alldeal">
-      <img src="./img/deals/182261.jpg"/>
-    </div>
-    <div id="deal-251090" class="alldeal">
-      <img src="./img/deals/28057.jpg"/>
-    </div>
-    <div id="deal-590191" class="alldeal">
-      <img src="./img/deals/32420.jpg"/>
-    </div>
-    <div id="deal-590192" class="alldeal">
-      <img src="./img/deals/32447.jpg"/>
-    </div>
-    <div id="deal-590193" class="alldeal">
-      <img src="./img/deals/32464.jpg"/>
-    </div>
+              <div ng-repeat="image in images">
+                <img ng-src="images/deals/{{image}}">
+              </div>
             </div>
 
             <div class="seemore">SEE MORE</div>
