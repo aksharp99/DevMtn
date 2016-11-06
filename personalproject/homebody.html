@@ -19,7 +19,7 @@
           <div>
             <div class="alldeals">
               <div ng-repeat="image in images">
-                <img ng-src="images/deals/{{image}}">
+                <a ui-sref="productview ({id:image.id})"><img ng-src="images/deals/{{image.id}}"></a>
               </div>
             </div>
 

@@ -3,7 +3,14 @@ angular.module('myapp').controller('mainCtrl', function($scope, mainService) {
 
   $scope.getAllImages = function() {
     mainService.getImages().then(function(response) {
-      $scope.images = response.data;
+      console.log('this is response: ',response);
+      console.log('this is response data: ',response.data);
+      var arrayOfObjects = response.data.map(function(element) {
+        return {id:element};
+      })
+
+      $scope.images = arrayOfObjects;
+
     })
   }
 

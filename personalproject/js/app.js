@@ -12,7 +12,7 @@ angular.module('myapp',['ui.router'])
   })
 
   .state('productview', {
-    url:'/productview/:i',
+    url:'/productview/:id',
     templateUrl: '../productview.html',
     controller: 'productviewCtrl'
   })
