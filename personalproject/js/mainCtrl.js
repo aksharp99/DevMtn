@@ -10,6 +10,7 @@ angular.module('myapp').controller('mainCtrl', function($scope, mainService) {
       })
 
       $scope.images = arrayOfObjects;
+      console.log('this is the arrayOfObjects: ',arrayOfObjects);
 
     })
   }

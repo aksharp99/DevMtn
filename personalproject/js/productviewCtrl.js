@@ -7,10 +7,10 @@ angular.module('myapp').controller('productviewCtrl', function($scope, mainServi
         return {id:element};
       })
 
-      for(var i = 0; i < arrayOfObjects; i++) {
+      for(var i = 0; i < arrayOfObjects.length; i++) {
         if($stateParams.id == arrayOfObjects[i].id) {
           $scope.oneimage = arrayOfObjects[i].id;
-      
+          console.log('this is $scope oneimage: ',arrayOfObjects[i].id);
         }
       }
     })
