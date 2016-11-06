@@ -6,7 +6,7 @@
   // var navbar = document.getElementsByClassName('list-wrapper')[0];
   // navClasses = navbar.classList;
 
-  
+
 
   window.addEventListener('scroll', function(e) {
     var currentScroll = window.scrollY;
