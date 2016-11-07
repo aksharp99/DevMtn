@@ -1,15 +1,46 @@
 //include http, fs and url module
 var http = require('http'),
     express = require('express'),
-    app = express(),
     cors = require('cors'),
     fs = require('fs'),
     path = require('path'),
     url = require('url');
-    imageDir = './images/deals/';
-    app.use(cors());
+    imageDir = './public/images/deals/';
+
+var app = module.exports = express();
+
+
+app.use(cors());
+
+app.use(express.static(__dirname + '/public'));
 //create http server listening on port 3333
-http.createServer(function(req, res) {
+// http.createServer(function(req, res) {
+//   //use the url to parse the requested url and get the image name
+//   var query = url.parse(req.url,true).query;
+//   pic = query.image;
+//
+//   if(typeof pic === 'undefined') {
+//     getImages(imageDir, function(err, files) {
+//       var imageList = JSON.stringify(files);
+//       res.writeHead(200, {'Content-type':'application/json'});
+//       res.end(imageList);
+//     });
+//   } else {
+//     //read the image using fs and send the image content back in the response
+//     fs.readFile(imageDir + pic, function(err, content) {
+//       if(err) {
+//         res.writeHead(400, {'Content-type':'text/html'})
+//         console.log(err);
+//         res.end("No such image");
+//       } else {
+//         //specify the content type in the response will be an image
+//         res.writeHead(200,{'Content-type':'image/jpg'});
+//         res.end(content,"binary");
+//       }
+//     });
+//   }
+// }).listen(3334);
+app.get("/photos", function(req, res) {
   //use the url to parse the requested url and get the image name
   var query = url.parse(req.url,true).query;
   pic = query.image;
@@ -34,8 +65,8 @@ http.createServer(function(req, res) {
       }
     });
   }
-}).listen(3333);
-console.log("Server running at http://localhost:3333/");
+});
+// console.log("Server running at http://localhost:3333/");
 
 //get the list of jpg files in the image dir
 function getImages(imageDir, callback) {
@@ -50,3 +81,7 @@ function getImages(imageDir, callback) {
     callback(err,files);
   });
 }
+
+app.listen(3333, function() {
+    console.log("Listening on port 3333");
+});
