@@ -436,20 +436,14 @@ text-align: center;
 
  }
 
- #testitout {
-   width: 278px;
-   height:42px;
-   border-color: #7cd8cb;
-   background-color: white;
- }
-
-select {
+.selectstyling {
   margin-top: 10px;
   display:block;
   border-color: #7cd8cb;
   background-color: white;
   height:12%;
   width:74%;
+  border-radius: 0;
 }
 
 .lefttext {
