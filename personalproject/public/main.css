@@ -458,27 +458,21 @@ select:nth-of-type(2) {
   font-family: 'Azo Sans',sans-serif;
 }
 
-#quantitybar {
-  width:72px;
-  height:46px;
-  border-radius: 5px;
-  outline:none;
-  margin-right: 3px;
-  /*outline: 1px solid #999;*/
+#bag {
+  width:74%;
+  height: 12%;
+  background-color: springgreen;
 }
 
-#quantitybar:focus {
-  /*border-color:2px solid #7cd8cb;*/
-  outline:2px solid #7cd8cb;
-}
 
-.fa.fa-caret-square-o-up {
-  font-size: 13px;
-}
 
-.fa.fa-caret-square-o-down {
-  font-size: 13px;
-}
+
+
+
+
+
+
+
 
 .lefttext {
 
