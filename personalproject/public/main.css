@@ -93,12 +93,15 @@ display: inline-block;
 }
 
 #searchbar {
-  background-color: springgreen;
+  background-color: #ffffff;
   position:absolute;
   margin-top: 13px;
   margin-left: 10px;
   border-radius: 50px;
   height: 20px;
+  outline:none;
+  border-radius: 3px;
+  border-color: #7cd8cb;
 
 }
 
