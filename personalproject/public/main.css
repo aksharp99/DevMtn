@@ -469,8 +469,8 @@ select:nth-of-type(2) {
   width:72px;
   height:35px;
   float:left;
-  outline: 1px solid #999;
-  border-radius: 0;
+  /*outline: 1px solid #999;*/
+  border-radius: 5px;
 }
 
 #qty:focus {
@@ -479,10 +479,22 @@ select:nth-of-type(2) {
 
 #checkout {
   display: inline;
-  background-color: yellow;
-  width:91px;
+  background-color: #7cd8cb;
+  width:70%;
   height:42px;
   float: right;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Proxima-Nova',sans-serif;
+  color: #FFFFFF;
+
+}
+
+#checkout p:first-child {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 8px;
 }
 
 .lefttext {
