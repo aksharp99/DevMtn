@@ -446,6 +446,10 @@ text-align: center;
   border-radius: 0;
 }
 
+.selectstyling:focus {
+  outline:2px solid #7cd8cb;
+}
+
 .lefttext {
 
 
