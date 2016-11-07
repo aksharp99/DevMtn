@@ -419,6 +419,7 @@ text-align: center;
    display: inline-block;
    width:426px;
    height:30px;
+   padding-bottom: 15px;
  }
 
  .truck i {
@@ -432,7 +433,24 @@ text-align: center;
    font-size: 11px;
    padding-left: 8px;
    font-family: 'Azo Sans thin',sans-serif;
+
  }
+
+ #testitout {
+   width: 278px;
+   height:42px;
+   border-color: #7cd8cb;
+   background-color: white;
+ }
+
+select {
+  margin-top: 10px;
+  display:block;
+  border-color: #7cd8cb;
+  background-color: white;
+  height:12%;
+  width:74%;
+}
 
 .lefttext {
 
