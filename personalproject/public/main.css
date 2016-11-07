@@ -463,6 +463,7 @@ select:nth-of-type(2) {
   height:46px;
   border-radius: 5px;
   outline:none;
+  margin-right: 20px;
   /*outline: 1px solid #999;*/
 }
 
