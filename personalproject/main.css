@@ -375,6 +375,7 @@ text-align: center;
   .price {
     font-family: 'Proxima-Nova',sans-serif;
     position:relative;
+    padding-bottom: 30px;
   }
 
   .price span {
@@ -389,12 +390,49 @@ text-align: center;
     text-decoration: line-through;
   }
 
-  #box {
-    display: inline;
-    background-color: springgreen;
-    height:27px;
-    width:56px;
-  }
+ #favbox {
+   display:inline-block;
+   margin-left: 108px;
+   width:60px;
+   height:29px;
+   /*background-color: springgreen;*/
+   border: 1px solid #eee;
+   border-radius: 3px;
+
+
+}
+
+#favbox span {
+  color:#999;
+  font-size:12px;
+  cursor: pointer;
+}
+
+ .fa.fa-heart-o {
+   color:#999;
+   font-size: 12px;
+   padding:5px;
+   cursor:pointer;
+ }
+
+ .truck {
+   display: inline-block;
+   width:426px;
+   height:30px;
+ }
+
+ .truck i {
+   color:#999;
+   font-size: 13px;
+   vertical-align: middle;
+ }
+
+ .truck span {
+   color:#999;
+   font-size: 11px;
+   padding-left: 8px;
+   font-family: 'Azo Sans thin',sans-serif;
+ }
 
 .lefttext {
 
