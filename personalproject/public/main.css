@@ -463,7 +463,7 @@ select:nth-of-type(2) {
   height:46px;
   border-radius: 5px;
   outline:none;
-  margin-right: 20px;
+  margin-right: 3px;
   /*outline: 1px solid #999;*/
 }
 
@@ -472,6 +472,13 @@ select:nth-of-type(2) {
   outline:2px solid #7cd8cb;
 }
 
+.fa.fa-caret-square-o-up {
+  font-size: 13px;
+}
+
+.fa.fa-caret-square-o-down {
+  font-size: 13px;
+}
 
 .lefttext {
 
