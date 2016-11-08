@@ -551,6 +551,14 @@ margin: 8px;
   display: none;
 }
 
+#favbox:hover {
+  border:1px solid #e9517a;
+}
+
+#favbox span:hover {
+  color:#e9517a;
+}
+
 @media (max-width: 800px) {
   .content {
     margin-left:0px;
@@ -574,7 +582,7 @@ margin: 8px;
   }
 }
 
-  input {
+  #searchbar {
     display: none;
   }
 
