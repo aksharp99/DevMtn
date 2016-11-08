@@ -547,6 +547,10 @@ margin: 8px;
 
 }
 
+.yoyo {
+  display: none;
+}
+
 @media (max-width: 800px) {
   .content {
     margin-left:0px;
@@ -602,8 +606,8 @@ margin: 8px;
   }
 
   .yoyo {
-
-    background-color: springgreen;
+    display:block;
+    /*background-color: springgreen;*/
     width: auto;
     height: 50px;
 
