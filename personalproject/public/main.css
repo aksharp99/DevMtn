@@ -353,6 +353,10 @@ text-align: center;
   padding: 50px;
 }
 
+.movedown {
+  display:none;
+}
+
 .rightthumbnail {
   /*background-color: springgreen;*/
   height: 341px;
@@ -490,6 +494,7 @@ select:nth-of-type(2) {
   font-size: 16px;
   font-family: 'Proxima-Nova',sans-serif;
   color: #FFFFFF;
+  border-bottom: 3px solid rgba(0,0,0,0.08);
 
 }
 
@@ -590,6 +595,19 @@ margin: 8px;
   }
 }
 
+@media (max-width: 1172px) {
+  .rightthumbnail {
+    display: none;
+  }
+
+  .movedown {
+    display: block;
+    background-color: springgreen;
+    width:auto;
+    height:50px;
+    margin-bottom: 0;
+  }
+}
 
 @media (min-width: 1017px) {
   #category-bar .list-wrapper .list-item {

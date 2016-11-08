@@ -6,6 +6,11 @@
     <img ng-src="images/deals/{{oneimage}}">
   </div>
 
+  <div class="movedown">
+  </div>
+
+  <!-- <div class="movedown"></div> -->
+
   <!-- <div class="lefttext">
     <div class="discount">
       <span>55%</span>
@@ -25,7 +30,7 @@
       <span>Split-Hem Cowl Neck Tunic</span>
      </div>
      <div class="price">
-       <span>$26.99</span>
+       <span>{{price}}</span>
        <span id="greyout">$49.99</span>
        <div id="favbox">
          <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -53,7 +58,7 @@
 
 
       <div id="bag">
-        <input id="qty" placeholder="1" ng-model="quantity">{{quantity}}</input>
+        <input id="qty" placeholder="1" ng-model="quantity"></input>
         <div id="checkout"><p>ADD TO BAG</p></div>
       </div>
 

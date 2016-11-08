@@ -1,6 +1,6 @@
 angular.module('myapp').controller('productviewCtrl', function($scope, mainService, $stateParams) {
 
-  $scope.test = "Akshar is the best!";
+  $scope.price = "$26.99";
   $scope.getAllImages = function() {
     mainService.getImages().then(function(response) {
       var arrayOfObjects = response.data.map(function(element) {

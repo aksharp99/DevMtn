@@ -2,6 +2,7 @@
 var http = require('http'),
     express = require('express'),
     cors = require('cors'),
+    pictureCtrl = require('./pictureCtrl'),
     fs = require('fs'),
     path = require('path'),
     url = require('url');
@@ -66,6 +67,8 @@ app.get("/photos", function(req, res) {
     });
   }
 });
+
+app.get('/api/pictures',pictureCtrl.get);
 // console.log("Server running at http://localhost:3333/");
 
 //get the list of jpg files in the image dir
