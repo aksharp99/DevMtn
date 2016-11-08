@@ -353,7 +353,7 @@ text-align: center;
   padding: 50px;
 }
 
-.movedown {
+.movethemdown {
   display:none;
 }
 
@@ -495,6 +495,7 @@ select:nth-of-type(2) {
   font-family: 'Proxima-Nova',sans-serif;
   color: #FFFFFF;
   border-bottom: 3px solid rgba(0,0,0,0.08);
+  cursor: pointer;
 
 }
 
@@ -600,13 +601,14 @@ margin: 8px;
     display: none;
   }
 
-  .movedown {
-    display: block;
+  .yoyo {
+
     background-color: springgreen;
-    width:auto;
-    height:50px;
-    margin-bottom: 0;
+    width: auto;
+    height: 50px;
+
   }
+
 }
 
 @media (min-width: 1017px) {
