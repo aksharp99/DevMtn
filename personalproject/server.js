@@ -2,6 +2,8 @@
 var http = require('http'),
     express = require('express'),
     cors = require('cors'),
+    massive = require('massive'),
+    bodyParser = require('body-parser'),
     pictureCtrl = require('./pictureCtrl'),
     fs = require('fs'),
     path = require('path'),
@@ -10,10 +12,40 @@ var http = require('http'),
 
 var app = module.exports = express();
 
-
+app.use(bodyParser.json());
 app.use(cors());
 
 app.use(express.static(__dirname + '/public'));
+
+//MASSIVE//
+var massiveUrl = 'postgres://localhost/cart';
+var massiveServer = massive.connectSync({
+  connectionString: massiveUrl
+});
+
+app.set('db', massiveServer);
+var db = app.get('db');
+
+//ENDPOINTS//
+app.post('/api/user', function(req, res, next) {
+  db.user_create([req.body.name,req.body.email],function(err, user) {
+    if(err) {
+      res.status(500).send(err);
+    }
+    res.status(200).send('User created successfully');
+  })
+});
+
+app.get('/api/user', function(req, res, next) {
+  db.users(function(err, users) {
+    if(err) {
+      res.status(500).send(err);
+    }
+   res.status(200).send(users);
+  })
+});
+
+
 //create http server listening on port 3333
 // http.createServer(function(req, res) {
 //   //use the url to parse the requested url and get the image name
