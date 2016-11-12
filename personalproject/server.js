@@ -28,13 +28,33 @@ var db = app.get('db');
 
 //ENDPOINTS//
 app.post('/api/user', function(req, res, next) {
-  db.user_create([req.body.name,req.body.email],function(err, user) {
+  db.user_create([req.body.name,req.body.phone],function(err, user) {
+    console.log('this is req body user id: ',req.body.user_id)
+    console.log('this is req body name: ',req.body.name);
+    console.log('this is req body phone: ',req.body.phone);
     if(err) {
       res.status(500).send(err);
     }
-    res.status(200).send('User created successfully');
-  })
+
+    // db.product_create([req.body.user_id], function(err, product) {
+    //   console.log('this is req body user_id: ',req.body.user_id);
+    //   if(err) {
+    //     return res.status(500).send(err);
+    //   }
+    //   res.status(200).send('User and product created successfully');
+    // });
+  });
 });
+
+app.post('/api/product', function(req, res ,next) {
+  db.product_create([req.body.user_id,req.body.quantity,req.body.price],function(err, product) {
+    if (err) {
+      res.status(500).send(err);
+    }
+  })
+})
+
+
 
 app.get('/api/user', function(req, res, next) {
   db.users(function(err, users) {
@@ -45,6 +65,23 @@ app.get('/api/user', function(req, res, next) {
   })
 });
 
+app.get('/api/product', function(req, res, next) {
+  db.products(function(err, products) {
+    if(err) {
+      res.status(500).send(err);
+    }
+    res.status(200).send(products);
+  })
+});
+
+app.get('/api/userproduct', function(req, res, next) {
+  db.user_product_join(function(err, userproduct) {
+    if(err) {
+      res.status(500).send(err);
+    }
+    res.status(200).send(userproduct);
+  })
+});
 
 //create http server listening on port 3333
 // http.createServer(function(req, res) {

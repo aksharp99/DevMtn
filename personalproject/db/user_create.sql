@@ -1,3 +1,3 @@
-INSERT INTO users (name, email)
-VALUES ($1, $2)
+INSERT INTO users (name, phone)
+VALUES ($1,$2)
 RETURNING *;
