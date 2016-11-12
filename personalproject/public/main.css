@@ -567,7 +567,13 @@ margin: 8px;
     width:100%;
   }
 
+  .cartblock {
+    background-color: lightsalmon;
+    height:430px;
+    width:985px;
+    margin-left: 289px;
 
+  }
 
 /*styline the checkout page above*/
 
