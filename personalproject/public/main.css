@@ -565,6 +565,8 @@ margin: 8px;
     background-color: springgreen;
     height:545px;
     width:100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .cartblock {
@@ -573,6 +575,15 @@ margin: 8px;
     width:985px;
     margin-left: 289px;
 
+
+  }
+
+  .promise {
+    background-color: cyan;
+    height:430px;
+    width:338px;
+    display: inline-block;
+    margin-right: 269px;
   }
 
 /*styline the checkout page above*/
