@@ -559,6 +559,46 @@ margin: 8px;
   color:#e9517a;
 }
 
+/*styling the chat box below*/
+.chatty {
+  background: rgba(137,220,208,0.9);
+  width: 150px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px !important;
+  font-weight: 600;
+  border: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  min-width: 150px;
+  height:28px;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  right: 23px;
+  z-index: 2;
+  line-height: normal;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+
+}
+
+.chatty input {
+  width: 100%;
+  background: none;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  outline:none;
+}
+
+#myDIV {
+  display:none;
+}
+/*styling the chat box above*/
+
 /*styling the checkout page below*/
 
   .wrapper {
@@ -649,7 +689,7 @@ margin: 8px;
     background-color: springgreen;
     height: 107px;
     border-bottom: 1px solid #EEEEEE;
-    
+
   }
 
 /*styline the checkout page above*/
