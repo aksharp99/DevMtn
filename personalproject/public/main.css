@@ -595,7 +595,7 @@ margin: 8px;
 }
 
 #myDIV {
-  
+
   position: fixed;
   bottom: 8px;
   right:23px;
@@ -617,6 +617,12 @@ margin: 8px;
   background-color: blue;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+#myDIV div:nth-of-type(3) {
+  background-color: salmon;
+  width: 100%;
+  height: calc(100% - 336px);
 }
 /*styling the chat box above*/
 
