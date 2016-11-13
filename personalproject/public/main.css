@@ -574,7 +574,7 @@ margin: 8px;
   text-align: center;
   cursor: pointer;
   position: fixed;
-  bottom: 0;
+  bottom: 8px;
   right: 23px;
   z-index: 2;
   line-height: normal;
@@ -585,7 +585,7 @@ margin: 8px;
 
 }
 
-.chatty input {
+.chatty button {
   width: 100%;
   background: none;
   border: none;
@@ -596,6 +596,9 @@ margin: 8px;
 
 #myDIV {
   display:none;
+  height: 50px;
+  width: 50px;
+  background-color: springgreen;
 }
 /*styling the chat box above*/
 
