@@ -587,6 +587,11 @@ margin: 8px;
     background-color: red;
     height: 50px;
   }
+                                                           
+  .cartblock div:nth-of-type(3) {
+    background-color: yellow;
+    height: 180px;
+  }
 
   .promise {
 
