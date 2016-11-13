@@ -608,6 +608,11 @@ margin: 8px;
     height: 97px;
   }
 
+  #xyz {
+    width:100px;
+    height:51.25px;
+  }
+
   .cartblock div:nth-of-type(4) {
     background-color: darkgoldenrod;
     height:85px;
