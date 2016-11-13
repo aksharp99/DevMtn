@@ -645,7 +645,7 @@ margin: 8px;
   height: calc(100% - 336px);
 }
 
-#entername {
+.entertext {
   height: 29px;
   width: 100%;
   color: #AAA;
@@ -654,9 +654,14 @@ margin: 8px;
   border: 1px solid #DDD;
 }
 
-#entername:focus {
+.entertext:focus {
   outline: 1px solid firebrick;
 }
+
+.strongtext {
+  display:none;
+}
+
 /*styling the chat box above*/
 
 /*styling the checkout page below*/
