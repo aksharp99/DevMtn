@@ -596,8 +596,11 @@ margin: 8px;
 
 #myDIV {
   display:none;
-  height: 50px;
-  width: 50px;
+  position: fixed;
+  bottom: 8px;
+  right:23px;
+  height: 400px;
+  width: 290px;
   background-color: springgreen;
 }
 /*styling the chat box above*/
