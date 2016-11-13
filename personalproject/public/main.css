@@ -626,9 +626,17 @@ margin: 8px;
 #myDIV div:nth-of-type(2) {
   width:100%;
   height: 312px;
-  background-color: blue;
+  /*background-color: blue;*/
+  background: #FFFFFF;
   overflow-x: hidden;
   overflow-y: auto;
+  color: #666;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+}
+
+#myDIV div:nth-of-type(2) p {
+  padding: 20px;
 }
 
 #myDIV div:nth-of-type(3) {
