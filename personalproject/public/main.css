@@ -604,7 +604,7 @@ margin: 8px;
   }
 
   .cartblock div:nth-of-type(3) {
-    background-color: yellow;
+    background-color: #fff;
     height: 97px;
   }
 
@@ -614,18 +614,26 @@ margin: 8px;
   }
 
   .cartblock div:nth-of-type(4) {
-    background-color: darkgoldenrod;
+    /*background-color: darkgoldenrod;*/
+    background-color: #fff;
     height:85px;
   }
 
   .cartblock div:nth-of-type(5) {
-    background-color: purple;
+    /*background-color: purple;*/
+    background-color: #fff;
     height: 82px;
   }
 
   .cartblock div:nth-of-type(6) {
-    background-color: green;
+    /*background-color: green;*/
+    background-color: #fff;
     height: calc(100% - 386px);
+  }
+
+  .rh.tot {
+  font-size: 16px;
+  font-weight: 700;
   }
 
   .promise {
