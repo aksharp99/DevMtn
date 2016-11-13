@@ -645,6 +645,13 @@ margin: 8px;
     margin-right: 269px;
   }
 
+  .promise div {
+    background-color: springgreen;
+    height: 107px;
+    border-bottom: 1px solid #EEEEEE;
+    
+  }
+
 /*styline the checkout page above*/
 
 @media (max-width: 800px) {
