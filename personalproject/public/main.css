@@ -575,17 +575,32 @@ margin: 8px;
     width:985px;
     margin-left: 289px;
 
-
   }
 
   .cartblock div {
-    background-color: blue;
+    background-color: #fff;
     height: 72px;
+    border-bottom: 1px solid #EEEEEE;
+    font-family: 'Proxima-Nova',sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #333;
+    padding-top: 34px;
+    padding-left: 33px;
   }
 
   .cartblock div:nth-of-type(2) {
-    background-color: red;
+
+    background-color: #fff;
     height: 50px;
+
+  }
+
+  .rh {
+    float:right;
+    margin-right: 34px;
+    padding-right: 119px;
+
   }
 
   .cartblock div:nth-of-type(3) {
