@@ -601,14 +601,26 @@ margin: 8px;
   right:23px;
   height: 400px;
   width: 290px;
-  background-color: springgreen;
+  /*background-color: springgreen;*/
+
 }
 
 #myDIV div:nth-of-type(1) {
 
   width:100%;
   height:24px;
-  background-color: red;
+  /*background-color: red;*/
+  font-family: Verdana, Geneva, sans-serif;
+  background: #7cd8cb;
+  border-width: 0;
+  border-style: solid;
+  border-color: #DDD;
+  color: #42706a;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 #myDIV div:nth-of-type(2) {
