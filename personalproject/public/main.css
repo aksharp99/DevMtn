@@ -644,6 +644,19 @@ margin: 8px;
   width: 100%;
   height: calc(100% - 336px);
 }
+
+#entername {
+  height: 29px;
+  width: 100%;
+  color: #AAA;
+  font-style: italic;
+  border-radius: 5px;
+  border: 1px solid #DDD;
+}
+
+#entername:focus {
+  outline: 1px solid firebrick;
+}
 /*styling the chat box above*/
 
 /*styling the checkout page below*/
