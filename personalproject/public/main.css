@@ -493,7 +493,6 @@ select:nth-of-type(2) {
   border-radius: 5px;
   font-size: 16px;
   font-family: 'Proxima-Nova',sans-serif;
-  color: #FFFFFF;
   border-bottom: 3px solid rgba(0,0,0,0.08);
   cursor: pointer;
 
@@ -504,6 +503,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin: 8px;
+color:#FFFFFF;
 }
 
 .lefttext {
