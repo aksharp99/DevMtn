@@ -603,6 +603,7 @@ margin: 8px;
 
 #sendmessage:hover {
   border-radius: 20px 5px 20px;
+  border-bottom: 7px solid rgba(36,218,192,0.9);
 }
 
 #chatty button {
