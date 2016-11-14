@@ -585,27 +585,6 @@ margin: 8px;
 
 }
 
-#sendmessage {
-  background: rgba(137,220,208,0.9);
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 12px !important;
-  font-weight: 600;
-  border: 0;
-  /*border-top-left-radius: 5px;
-  border-top-right-radius: 5px;*/
-  border-radius: 5px 20px 5px;
-  text-align: center;
-  height: 29px;
-  width: 100%;
-  color: #42706a;
-  outline: none;
-}
-
-#sendmessage:hover {
-  border-radius: 20px 5px 20px;
-  border-bottom: 7px solid rgba(36,218,192,0.9);
-}
-
 #chatty button {
   width: 100%;
   background: none;
@@ -693,14 +672,26 @@ textarea {
   min-height: 70px;
 }
 
-/*#sendmessage {
+#sendmessage {
+  background: rgba(137,220,208,0.9);
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px !important;
+  font-weight: 600;
+  border: 0;
+  /*border-top-left-radius: 5px;
+  border-top-right-radius: 5px;*/
+  border-radius: 5px 20px 5px;
+  text-align: center;
   height: 29px;
   width: 100%;
-  color: #AAA;
-  font-style: italic;
-  border-radius: 5px;
-  background: rgba(137,220,208,0.9);
-}*/
+  color: #42706a;
+  outline: none;
+}
+
+#sendmessage:hover {
+  border-radius: 20px 5px 20px;
+  border-bottom: 7px solid rgba(36,218,192,0.9);
+}
 
 /*styling the chat box above*/
 
@@ -791,10 +782,30 @@ textarea {
   }
 
   .promise div {
-    background-color: springgreen;
-    height: 107px;
+    background-color: #fff;
+    height: 72px;
+    font-family: 'Proxima-Nova',sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #333;
+    padding-top: 34px;
+    padding-left: 33px;
     border-bottom: 1px solid #EEEEEE;
+  }
 
+  .promise div:nth-of-type(2) {
+    /*background-color: salmon;*/
+    background-color: #fff;
+    color: #999;
+    height: 164px;
+    border-bottom: 1px solid #EEEEEE;
+  }
+
+  .promise h4 {
+    font-family: 'Proxima-Nova',sans-serif;
+    color: #333;
+    font-size: 14px;
+    font-weight: 300;
   }
 
 /*styline the checkout page above*/
