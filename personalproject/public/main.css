@@ -560,7 +560,7 @@ margin: 8px;
 }
 
 /*styling the chat box below*/
-.chatty {
+#chatty {
   background: rgba(137,220,208,0.9);
   width: 150px;
   font-family: Verdana, Geneva, sans-serif;
@@ -585,7 +585,7 @@ margin: 8px;
 
 }
 
-.chatty button {
+#chatty button {
   width: 100%;
   background: none;
   border: none;
@@ -593,6 +593,8 @@ margin: 8px;
   cursor: pointer;
   outline:none;
 }
+
+
 
 #myDIV {
 
@@ -643,6 +645,7 @@ margin: 8px;
   background-color: salmon;
   width: 100%;
   height: calc(100% - 336px);
+  background: #FFFFFF;
 }
 
 .entertext {
