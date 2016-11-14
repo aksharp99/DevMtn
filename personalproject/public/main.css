@@ -585,6 +585,26 @@ margin: 8px;
 
 }
 
+#sendmessage {
+  background: rgba(137,220,208,0.9);
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px !important;
+  font-weight: 600;
+  border: 0;
+  /*border-top-left-radius: 5px;
+  border-top-right-radius: 5px;*/
+  border-radius: 5px 20px 5px;
+  text-align: center;
+  height: 29px;
+  width: 100%;
+  color: #42706a;
+  outline: none;
+}
+
+#sendmessage:hover {
+  border-radius: 20px 5px 20px;
+}
+
 #chatty button {
   width: 100%;
   background: none;
@@ -646,6 +666,8 @@ margin: 8px;
   width: 100%;
   height: calc(100% - 336px);
   background: #FFFFFF;
+  border: 1px solid #EEE;
+
 }
 
 .entertext {
@@ -669,6 +691,15 @@ textarea {
   width: 100%;
   min-height: 70px;
 }
+
+/*#sendmessage {
+  height: 29px;
+  width: 100%;
+  color: #AAA;
+  font-style: italic;
+  border-radius: 5px;
+  background: rgba(137,220,208,0.9);
+}*/
 
 /*styling the chat box above*/
 
