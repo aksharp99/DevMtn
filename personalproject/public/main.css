@@ -647,7 +647,6 @@ margin: 8px;
   height: calc(100% - 336px);
   background: #FFFFFF;
   border: 1px solid #EEE;
-
 }
 
 .entertext {
@@ -791,6 +790,7 @@ textarea {
     padding-top: 34px;
     padding-left: 33px;
     border-bottom: 1px solid #EEEEEE;
+    overflow-y: auto;
   }
 
   .promise div:nth-of-type(2) {
@@ -799,6 +799,7 @@ textarea {
     color: #999;
     height: 164px;
     border-bottom: 1px solid #EEEEEE;
+    overflow-y: auto;
   }
 
   .promise h4 {
@@ -806,6 +807,13 @@ textarea {
     color: #333;
     font-size: 14px;
     font-weight: 300;
+  }
+
+  .promise div:nth-of-type(3) {
+    background-color: #fff;
+    height: calc(100% - 341px);
+    color: #999;
+    overflow-y: auto;
   }
 
 /*styline the checkout page above*/
