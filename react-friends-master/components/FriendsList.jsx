@@ -1,6 +1,6 @@
 import React from "react";
-import Friend from "./Friend.jsx";
-import friends from "../../friends.js";
+import Friend from "./Friend";
+import friends from "../friends";
 class FriendsList extends React.Component {
     constructor( props ) {
         super( props );
