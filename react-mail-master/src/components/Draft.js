@@ -1,9 +1,13 @@
 import React from "react";
+import {browserHistory} from "react-router";
 
 export default class Draft extends React.Component {
-	render() {
-		const styles = this.getStyles();
+	sendMessage(event) {
+		event.preventDefault();
 
+		browserHistory.push("/inbox");
+	}
+	render() {
 		return (
 			<div>
 				<h1>New Message</h1>

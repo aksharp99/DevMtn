@@ -1,15 +1,15 @@
 import React from "react";
 
-export default class Contact extends React.Component {
+export default class Contacts extends React.Component {
 	render() {
 		const styles = this.getStyles();
 
 		return (
 			<ul style={ styles.contactWrapper }>
-				<li style={ styles.name }>{ /* contact name */ }</li>
-				<li>Company: { /* contact company */ }</li>
-				<li>Email: { /* contact email */ }</li>
-				<li>: Phone #: { /* contact phone */ }</li>
+				<li style={ styles.name }>{this.props.name}</li>
+				<li>Company: {this.props.company}</li>
+				<li>Email: {this.props.email}</li>
+				<li>: Phone #: {this.props.phone}</li>
 			</ul>
 		);
 	}
