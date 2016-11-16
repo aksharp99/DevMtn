@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
 import {render} from 'react-dom';
 
+import Party from './Party.jsx';
 
 class App extends Component {
   render() {
     return (
-      <h1>Hello World</h1>
+      <div>
+        <h1>Hello World</h1>
+        <Party />
+      </div>
     )
   }
 }
