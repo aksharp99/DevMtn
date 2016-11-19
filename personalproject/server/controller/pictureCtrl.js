@@ -1,4 +1,4 @@
-var pictures = require('./pictures.json');
+//var pictures = require('./pictures.json');
 
 module.exports = {
   get: function(req, res, next){

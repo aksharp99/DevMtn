@@ -1,5 +1,7 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
+import {addGuest} from './redux/party.js';
 // class GuestList extends {
 //   render() {
 //     return (
@@ -28,4 +30,11 @@ const guests = props.guests.map((guest, i) => {
   )
 }
 
-export default GuestList
+function mapStateToProps(state) {
+  return {
+    guests: state.party.guests
+  }
+}
+
+
+export default connect(mapStateToProps)(GuestList)

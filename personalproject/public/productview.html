@@ -3,7 +3,7 @@
 
   <div class="leftthumbnail">
     <!-- <img ng-src="./img/deals/34508.jpg"/> -->
-    <img ng-src="images/deals/{{oneimage}}">
+    <img ng-src="images/deals/{{product.image}}">
     <div class="yoyo">
       <div class="title">
         <div class="titlemargin">
@@ -95,7 +95,7 @@
 
       <div id="bag">
         <input id="qty" placeholder="1" ng-model="quantity"></input>
-        <div id="checkout"><a ui-sref="checkout"><p>ADD TO BAG</p></a></div>
+        <div id="checkout" ng-click="addOrder()"><a ui-sref="checkout"><p>ADD TO BAG</p></a></div>
       </div>
 
   </div>

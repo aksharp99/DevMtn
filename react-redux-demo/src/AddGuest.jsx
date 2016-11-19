@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+
 class AddGuest extends Component {
   constructor(props) {
     super(props)
@@ -40,4 +41,4 @@ class AddGuest extends Component {
   }
 }
 
-export default AddGuest
+export default connect(null, {addFriend})(AddGuest)
