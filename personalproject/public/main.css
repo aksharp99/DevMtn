@@ -484,27 +484,30 @@ select:nth-of-type(2) {
   outline: 2px solid #7cd8cb;
 }
 
-#checkout {
+.checkout {
   display: inline;
   background-color: #7cd8cb;
-  width:70%;
+  margin-right: 2px;
+  width:35%;
   height:42px;
   float: right;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 13px;
   font-family: 'Proxima-Nova',sans-serif;
   border-bottom: 3px solid rgba(0,0,0,0.08);
   cursor: pointer;
 
 }
 
-#checkout p:first-child {
+.checkout p:first-child {
 display: flex;
 justify-content: center;
 align-items: center;
 margin: 8px;
 color:#FFFFFF;
 }
+
+
 
 .lefttext {
 
@@ -894,11 +897,12 @@ textarea {
     height: 20px;
   }
 
-  #checkout {
+  .checkout {
     height: 20px;
+    width:70%;
   }
 
-  #checkout p:first-child {
+  .checkout p:first-child {
     display:flex;
     justify-content: center;
     align-items: center;
@@ -908,7 +912,9 @@ textarea {
     margin-left: 8px;
   }
 
-  #checkout p {
+
+
+  .checkout p {
     font-size: 15px;
 
   }

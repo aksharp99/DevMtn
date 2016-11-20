@@ -39,7 +39,7 @@
 
        <div id="bag">
          <input id="qty" placeholder="1" ng-model="quantity"></input>
-         <div id="checkout"><p>ADD TO BAG</p></div>
+         <div class="checkout"><p>ADD TO BAG</p></div>
        </div>
     </div>
   </div>
@@ -95,7 +95,12 @@
 
       <div id="bag">
         <input id="qty" placeholder="1" ng-model="quantity"></input>
-        <div id="checkout" ng-click="addOrder()"><a ui-sref="checkout"><p>ADD TO BAG</p></a></div>
+        <div class="checkout" ng-click="addOrder()">
+          <p>ADD TO BAG</p>
+        </div>
+        <div class="checkout">
+          <p>CHECKOUT</p>
+        </div>
       </div>
 
   </div>
