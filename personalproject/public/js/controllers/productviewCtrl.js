@@ -5,6 +5,7 @@ angular.module('myapp').controller('productviewCtrl', function($scope, productSe
       $scope.product = response[0];
       $scope.price = $scope.product.price;
       console.log('this is the response in mainCtrl: ',response);
+      console.log('this is the scope product: ',response[0]);
     })
   }
     $scope.getOneImage();
