@@ -34,7 +34,10 @@ var productCtrl = require('./controller/productCtrl');
 
 app.get('/api/products', productCtrl.getAllProducts);
 app.get('/api/products/:id', productCtrl.getProductById);
-
+app.get('/api/listmyproducts/:id', productCtrl.getMyProducts);
+app.post('/api/orders', productCtrl.addOrder);
+app.post('/api/productsinorder', productCtrl.addToProductsInOrder);
+app.post('/api/checkoutcomplete', productCtrl.checkoutComplete);
 //POST AND GET USER
 app.post('/api/user', function(req, res, next) {
   db.user_create([req.body.name, req.body.email],function(err, user) {

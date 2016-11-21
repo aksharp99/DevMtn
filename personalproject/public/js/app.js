@@ -18,7 +18,7 @@ angular.module('myapp',['ui.router'])
   })
 
   .state('checkout', {
-    url:'/checkout',
+    url:'/checkout/',
     templateUrl: '../checkout.html',
     controller: 'checkoutCtrl'
   })

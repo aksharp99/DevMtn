@@ -95,11 +95,11 @@
 
       <div id="bag">
         <input id="qty" placeholder="1" ng-model="quantity"></input>
-        <div class="checkout" ng-click="addOrder()">
+        <div class="checkout" ng-click="addToBag()">
           <p>ADD TO BAG</p>
         </div>
         <div class="checkout">
-          <p>CHECKOUT</p>
+          <a ui-sref="checkout"><p>CHECKOUT</p></a>
         </div>
       </div>
 

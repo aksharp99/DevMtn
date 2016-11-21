@@ -507,7 +507,12 @@ margin: 8px;
 color:#FFFFFF;
 }
 
-
+#checkedout {
+float:left;
+color:#FFFFFF;
+font-size: 13px;
+font-family: 'Proxima-Nova',sans-serif;
+}
 
 .lefttext {
 
@@ -712,7 +717,7 @@ textarea {
     height:430px;
     width:985px;
     margin-left: 289px;
-
+    overflow-y: auto;
   }
 
   .cartblock div {
