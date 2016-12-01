@@ -466,8 +466,9 @@ select:nth-of-type(2) {
 }
 
 #bag {
-  width:74%;
-  height: 12%;
+  display:flex;
+  width:347px;
+  height:48px;
   /*background-color: springgreen;*/
 }
 
@@ -478,6 +479,7 @@ select:nth-of-type(2) {
   float:left;
   /*outline: 1px solid #999;*/
   border-radius: 5px;
+  margin-right: 17px;
 }
 
 #qty:focus {
@@ -704,6 +706,10 @@ textarea {
 
 /*styling the checkout page below*/
 
+  .tabledesc {
+    text-align: left;
+  }
+
   .wrapper {
     background-color: #F3F3F3;
     height:545px;
@@ -716,8 +722,10 @@ textarea {
     background-color: lightsalmon;
     height:430px;
     width:985px;
-    margin-left: 289px;
+    /*margin-left: 289px;*/
+    margin-right: 10px;
     overflow-y: auto;
+    flex-grow: 1;
   }
 
   .cartblock div {
@@ -740,10 +748,11 @@ textarea {
   }
 
   .rh {
+
     float:right;
     margin-right: 34px;
     padding-right: 119px;
-
+    flex-grow: 1;
   }
 
   .cartblock div:nth-of-type(3) {
@@ -785,7 +794,8 @@ textarea {
     height:430px;
     width:338px;
     display: inline-block;
-    margin-right: 269px;
+    /*margin-right: 269px;*/
+    flex-grow: 1;
   }
 
   .promise div {
@@ -876,6 +886,11 @@ textarea {
 }
 
 @media (max-width: 1172px) {
+
+  #ch {
+  display: inline;
+  }
+
   .rightthumbnail {
     display: none;
   }

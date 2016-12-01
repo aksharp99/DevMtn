@@ -4,17 +4,17 @@
 
     <div>
       DESCRIPTION
+
       <span class="rh">PRICE</span>
-      <!-- <span class="rh">SHIPPING</span> -->
       <span class="rh">QTY</span>
       <span class="rh">NAME</span>
+
     </div>
 
     <div ng-repeat="product in allmyproducts">
       <img id="xyz" ng-src="images/deals/{{product.image}}">
 
       <span class="rh">${{product.price}}</span>
-      <!-- <span class="rh">$4.99</span> -->
       <span class="rh">1 | Edit</span>
       <span class="rh">{{product.name}}</span>
     </div>
