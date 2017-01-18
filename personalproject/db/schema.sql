@@ -1,6 +1,8 @@
 CREATE TABLE users
 (
-id SERIAL PRIMARY KEY
+id SERIAL PRIMARY KEY,
+name text,
+email text
 )
 
 CREATE TABLE orders
@@ -13,7 +15,10 @@ completed BOOLEAN
 CREATE TABLE products
 (
 id SERIAL PRIMARY KEY,
-Description VARCHAR(250)
+description VARCHAR(250),
+name VARCHAR(250),
+price FLOAT,
+image text
 )
 
 CREATE TABLE products_in_order
@@ -23,3 +28,5 @@ ordered INTEGER references orders(id),
 productid INTEGER references products(id),
 quantity FLOAT
 )
+
+INSERT INTO products(id, description)

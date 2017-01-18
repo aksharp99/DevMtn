@@ -17,7 +17,8 @@ app.use(cors());
 var db = massive.connect({connectionString : connString},
   function(err, localdb){
     db = localdb;
-    // app.set('db', db);
+    app.set('db', db);
+
     //
     // db.user_create_seed(function(){
     //   console.log("User Table Init");
@@ -27,8 +28,19 @@ var db = massive.connect({connectionString : connString},
     // });
 })
 
+
+
+
+module.exports = app;
+var userCtrl = require('./controllers/userCtrl');
+
+//ENDPOINTS//
+
+app.get('/api/users',userCtrl.getAllUsers);
+app.get('/api/vehicles',userCtrl.getAllVehicles);
+app.post('/api/user',userCtrl.postUser);
+app.post('/api/vehicle',userCtrl.postVehicle);
+
 app.listen('3000', function(){
   console.log("Successfully listening on : 3000")
 })
-
-module.exports = app;
